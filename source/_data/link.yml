@@ -1,0 +1,24 @@
+class:
+  class_name: 友情链接
+  link_list:
+    1:
+      name: 以西笑嘻嘻
+      link: https://xydh.fun/chenyixi
+      avatar: https://s2.loli.net/2021/12/25/M32LRaSnpQDWAmx.jpg
+      descr: 以西自用书签
+    2:
+      name: 萤火森林
+      link: https://ixyyds.github.io/
+      avatar: https://s2.loli.net/2022/01/10/DWfkow6sCAUxzHh.jpg
+      descr: 萤火大佬的blog
+    3:
+      name: Sady'Blog 
+      link: https://sady0.com
+      avatar: https://pic.sady0.com/2022/01/22/fe60d1a167a45.png
+      descr: 永远年轻，永远热泪盈眶.
+    4:
+      name: 旅游的企鹅
+      link: https://lydqe.vercel.app/
+      avatar: https://pic.imgdb.cn/item/621a2a972ab3f51d91b94a6b.jpg
+      descr: 努力学习中
+
