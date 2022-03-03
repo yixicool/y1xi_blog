@@ -3,7 +3,6 @@ title: python基础语法学习归档
 top: false
 top_img: https://s2.loli.net/2022/02/24/TJX1jfQ7M59np8V.png
 cover: false
-top: true
 toc: true
 mathjax: false
 date: 2022-02-24 17:34:50
