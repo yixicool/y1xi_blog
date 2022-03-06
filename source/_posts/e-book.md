@@ -1,5 +1,5 @@
 ---
-title: 知识就是希望|电子书寻找记
+title: 知识就是希望|电子书环游记
 top: false
 top_img: https://s2.loli.net/2022/02/24/HyjY7Fr5sNDxVEd.png
 cover: false

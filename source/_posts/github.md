@@ -1,5 +1,5 @@
 ---
-title: github优秀开源项目全收集
+title: github优秀开源项目收录
 top: false
 top_img: https://s2.loli.net/2022/02/15/GK3qOCJSforDHkI.jpg
 cover: false
@@ -94,6 +94,12 @@ tags:
 - 更新频道：https://t.me/PagerMaid_Modify
 
 地址：https://github.com/Xtao-Labs/PagerMaid-Modify
+
+# Windows上优质&精选的最佳应用程序及工具列表
+
+一个令人敬畏和策划的Windows最佳应用程序和工具列表
+
+地址：https://github.com/Awesome-Windows/Awesome
 
 # Telegram 中文搜索 (非官方)
 
@@ -346,3 +352,18 @@ tags:
 是否可以做一个工具，可以连接这些独立博主，在保持独立博客的自由的同时，组织一个独立博客的创作和读者群体，让独立博客们也有一个稳定的被发现的渠道。这个工具可能是一个带个性化推荐系统的 RSS 客户端，可能是一个类似微博、twitter 但是主要内容是独立博客的新东西，读者可以点赞，评论。可以知道我们 follow 的博主 follow 了谁……
 
 地址：https://github.com/timqian/chinese-independent-blogs
+
+# BilibiliVideoDownload
+
+-  下载普通视频
+-  下载番剧视频
+-  下载多P视频
+-  下载电影(额外付费除外)
+-  下载封面
+-  下载字幕
+-  下载进度
+-  基本视频信息
+-  删除下载记录
+-  暂停/恢复下载
+
+地址：https://github.com/blogwy/BilibiliVideoDownload

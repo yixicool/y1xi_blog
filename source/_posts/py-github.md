@@ -1,5 +1,5 @@
 ---
-title:  GitHub中python项目汇集
+title:  GitHub中python项目收录
 top: false
 top_img: https://s2.loli.net/2022/02/24/C9sAG7taXI3wz4u.png
 cover: false
