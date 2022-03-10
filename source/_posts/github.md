@@ -367,3 +367,40 @@ tags:
 -  暂停/恢复下载
 
 地址：https://github.com/blogwy/BilibiliVideoDownload
+
+# 绝版游戏保护工程
+
+今天互联网上的内容，由于各种原因，正在以越来越快的速度消失，而新一代网民们，却并没有备份和记录的习惯及意识。不远的将来，会有一天，当你特别想找一个东西却搜尽互联网都找不到时就来麻烦了，本项目立足于将这样的损失最小化.
+
+地址：https://github.com/skywind3000/preserve-cd
+
+# websits - and - tools
+
+分类收藏一些网站、工具和软件，记录一些关于 windows/macOS/linux 系统的使用技巧和软件操作。
+
+地址：https://github.com/jayboxyz/websites-and-tools
+
+# Github星爆沙雕榜
+
+收集GitHub上沙雕好玩儿的项目（当然，不完全是沙雕，还有不少的学习资源）
+
+地址：https://github.com/zhaoolee/StarsAndClown
+
+# 前端学习资料
+
+前端入门到进阶图文教程，超详细的 Web 前端学习笔记，从零开始学前端，做一名精致优雅的前端工程师。持续更新中...
+
+通俗易懂，不懂技术也能学。此前端教程不玩猫腻，不会设置任何套路，因为我**相信启蒙的重要性**。
+
+官网地址：[https://web.qianguyihao.com](https://web.qianguyihao.com/)
+
+如果官网打开异常，请先尝试强制刷新页面，或者清除浏览器缓存，或者提交 GitHub issues 反馈问题。
+
+如果你发现本项目有内容上的错误，欢迎在 GitHub 提交 issues 或者 pull requests 进行指正，方便归档。
+
+- 项目作用
+  - 网上的大部分入门教程，都不太适合初学者，本项目争取照顾到每一位前端入门者的同理心。即使你完全不懂前端，甚至不懂编程，通过这个教程，也能让小白入门。
+  - 帮助前端同学提供一个精品学习资源和路线，提高学习效率，少走很多弯路。
+  - 可以当做前端字典，随时翻阅，查漏补缺。
+
+地址：https://github.com/qianguyihao/Web

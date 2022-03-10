@@ -39,6 +39,7 @@ hi，我是以西，欢迎来到以西的小窝🥳
 * 选主题时逛到了[Nite07的小窝](https://www.nite07.com/)，简约的风格吸引了我，遂使用了butterfly的主题
 * 搭建时也参考了几位优秀魔改博主（[Akilarの糖果屋](https://akilar.top/)、[小冰博客](https://zfe.space/)、[小康博客](https://www.antmoe.com/)等）的教程进行调整
 * 同时使用[Vercel](https://vercel.com/)为Github pages加速
+* 博客源码已上传至GitHub并部署在vercel自动管理
 * 建立小站的目的是想要构建一套学习过程中的知识库，便于自己日后的反复阅览
 * 本博客文章采用 [CC BY-NC-SA 4.0 协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 协议，转载请注明出处
 * ......
