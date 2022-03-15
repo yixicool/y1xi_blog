@@ -25,6 +25,232 @@ tags:
 
 ---
 
+# 网易云
+
+## 解锁网易云音乐客户端变灰歌曲
+
+- 解锁网易云音乐客户端变灰歌曲
+- 支持win、安卓、ios、macOS、Linux
+
+地址：https://github.com/meng-chuan/Unlock-netease-cloud-music
+
+## 杜比大喇叭β版
+
+- 杜比大喇叭β是一款网易云音乐的音源代理模块，初衷只是作者对网易云音乐的热爱，希望让更多的人使用网易云。
+- 模块工作原理为音源替换而非破解，所以单曲付费与无版权歌曲有几率匹配错误，真心支持歌手请付费！
+
+地址：https://github.com/nining377/dolby_beta
+
+## 网易云音乐自动任务
+
+功能：
+
+- 签到领云贝
+- 自动完成云贝任务，并领取云贝
+- 打卡升级
+- 刷指定歌曲的播放量
+- 音乐人自动签到领取云豆
+- 音乐人自动完成任务，并领取云豆
+- 自动领取 vip 成长值
+- 多种推送方式
+- 支持多账号
+- 支持[腾讯云函数](https://github.com/chen310/NeteaseCloudMusicTasks#一部署到腾讯云函数) & [青龙面板](https://github.com/chen310/NeteaseCloudMusicTasks#二部署到青龙面板) & [本地运行](https://github.com/chen310/NeteaseCloudMusicTasks#三本地运行) & [docker 部署](https://github.com/chen310/NeteaseCloudMusicTasks#四使用docker部署)
+
+地址：https://github.com/chen310/NeteaseCloudMusicTasks
+
+# 沙雕
+
+## Github星爆沙雕榜
+
+收集GitHub上沙雕好玩儿的项目（当然，不完全是沙雕，还有不少的学习资源）
+
+地址：https://github.com/zhaoolee/StarsAndClown
+
+## 程序员做饭指南
+
+作者因疫情在家隔离，出不了门。只能宅在家做饭了。作为程序员，作者偶尔在网上找找菜谱和做法。但是这些菜谱往往写法千奇百怪，经常中间莫名出来一些材料。对于习惯了形式语言的程序员来说极其不友好
+
+所以，作者计划自己搜寻菜谱和并结合实际做菜的经验，准备用更清晰精准的描述来整理常见菜的做法，以方便程序员在家做饭。
+
+地址：https://github.com/Anduin2017/HowToCook
+
+## 克隆你的声音
+
+推荐一个黑科技开源项目，只需要你 5 秒钟的声音对话，就能克隆出你的声音，而且能够实时的生成你任意语音。
+
+地址：https://github.com/CorentinJ/Real-Time-Voice-Cloning
+
+## 有内鬼，终止交易（诺基亚图片生成器）
+
+“有内鬼，终止交易” 出自于电影《无间道》，这句话是刘德华向曾志伟手机发送的一则短信。
+
+电影大火后，这个梗开始流传开来，常常用来调侃因为不可控的因素而终止行动的状况。
+
+但随着诺基亚手机的衰败，智能手机的兴起，诺基亚短信的应用场景也越来越丰富，现在常常比喻很悲催的现状。
+
+地址：https://github.com/dcalsky/zzkia
+
+# 网盘
+
+## 蓝奏网盘 GUI版本
+
+- 本项目使用`PyQt5`实现图形界面，可以完成蓝奏云的大部分功能
+- 得益于 API 的功能，~~可以间接突破单文件最大 100MB 的限制~~(已关闭)，可以上传任意后缀文件，同时增加了批量上传/下载的功能
+
+地址：https://github.com/rachpt/lanzou-gui
+
+## 蓝奏云网盘
+
+-  批量上传 / 下载；
+-  URL 解析，自动合并文件；
+-  任意格式、大文件上传，支持断点功能；
+-  快速分享，一件复制分享信息到粘贴板。
+
+地址：https://github.com/chenhb23/lanzouyun-disk
+
+## 阿里云盘小白羊版
+
+- 基于阿里云盘网页版开发的PC客户端，支持win7-11，macOS，linux
+- 多账号登录、常用文件操作（新建文件夹、收藏、重命名、复制、移动、删除、详情、视频雪碧图）
+- 在线播放原始视频、在线播放转码视频、在线预览图片、在线预览文本、在线预览 word/excel/ppt/pdf、连接到远程 Aria2 下载
+- 上传文件、上传文件夹、批量改名、在线解压、回收站、收藏夹、分享文件、导入阿里云分享链接、缩略图列表、网盘内文件搜索、视频文件洗码
+
+- 已发布了使用帮助文档 https://www.yuque.com/liupan1890/xiaobaiyang
+
+地址：https://github.com/liupan1890/aliyunpan
+
+## 网盘目录列表
+
+-  跨平台、易部署
+-  多模式，多账户
+-  多主题
+-  下载直链
+-  防盗链
+-  目前支持的网盘
+   -  本地目录
+   -  天翼云网盘
+   -  teambition盘（个人、项目、国际服）
+   -  阿里云盘
+   -  OneDrive国际版
+
+地址：https://github.com/libsgh/PanIndex
+
+# 学习资料
+
+## 前端学习资料
+
+前端入门到进阶图文教程，超详细的 Web 前端学习笔记，从零开始学前端，做一名精致优雅的前端工程师。持续更新中...
+
+通俗易懂，不懂技术也能学。此前端教程不玩猫腻，不会设置任何套路，因为我**相信启蒙的重要性**。
+
+官网地址：[https://web.qianguyihao.com](https://web.qianguyihao.com/)
+
+如果官网打开异常，请先尝试强制刷新页面，或者清除浏览器缓存，或者提交 GitHub issues 反馈问题。
+
+如果你发现本项目有内容上的错误，欢迎在 GitHub 提交 issues 或者 pull requests 进行指正，方便归档。
+
+- 项目作用
+  - 网上的大部分入门教程，都不太适合初学者，本项目争取照顾到每一位前端入门者的同理心。即使你完全不懂前端，甚至不懂编程，通过这个教程，也能让小白入门。
+  - 帮助前端同学提供一个精品学习资源和路线，提高学习效率，少走很多弯路。
+  - 可以当做前端字典，随时翻阅，查漏补缺。
+
+地址：https://github.com/qianguyihao/Web
+
+## python
+
+### Python 代码库
+
+ - Python开发资源大全：Python框架、库、软件以及资源精选列表。
+   https://github.com/vinta/awesome-python
+ - 精选列表的中文版
+   https://github.com/jobbole/awesome-python-cn
+ - Python资源精选列表2：精心筛选的一组Python框架、库、软件以及资源列表 
+   https://github.com/trananhkma/fucking-awesome-python
+ - Python精选应用程序：将近400个开源Python应用程序，按主题陈列，且附有使用apatite根据结构化数据生成的代码库、文档等链接
+   https://github.com/mahmoud/awesome-python-applications
+ - Pytorch：与Pytorch相关的库，Pytorch是有名的张量与动态神经网络机器学习框架 
+   https://github.com/bharathgs/Awesome-pytorch-list
+ - Python异步：精心挑选的Python异步框架、库、软件以及资源清单: 
+   https://github.com/timofurrer/awesome-asyncio
+ - Jupyter：非常了不起的Jupyter项目、库以及资源的清单。你可以利用Jupyter创建和共享包含实时代码、方程式、可视化效果、文本等的Python文档。
+   https://github.com/markusschanta/awesome-jupyter
+ - Python书单: 有关Python的最佳书单！
+   https://github.com/Junnplus/awesome-python-books）
+
+### 图书文档
+
+ - Python指南：关于Python日常安装、配置和使用的最佳实践手册，包括pip、numpy、virtualenv等的介绍。
+   https://github.com/realpython/python-guide
+ - Python 中文指南：适合零基础的小白入门的 python 基础教程，代码示例丰富，好上手。
+   https://github.com/iswbm/python-guide
+ - Python简明教程：面向初学者的Python教程，你只需要知道如何保存一个保存文本文件即可开始学习。
+   https://github.com/swaroopch/byte-of-python
+ - Cosmic Python：以python方式的应用程序架构模式来管理复杂性，O'Reilly的免费书籍！
+   https://github.com/cosmicpython/book
+ - PyCharm 中文指南：面向 python 开发者的一份 PyCharm 指南，内含大量的 Gif 动态图讲解 100 多个能提高开发效率的小技巧：
+   https://github.com/iswbm/pycharm-guide
+ - Python 黑魔法手册：专门介绍 Python 黑魔法玩法的文档。
+   https://github.com/iswbm/magic-python
+ - Python机器学习：该库包含经典的机器学习教程的Notebook代码。
+   https://github.com/rasbt/python-machine-learning-book-3rd-edition
+
+### 面试问题
+
+ - Python经典编程面试题：经典的Python编程面试问题集，请不要作弊！
+   https://github.com/StBogdan/CTCI_python
+ - Python交互式编程题：使用Anki学习卡片提供了120多个持续更新、交互式、测试驱动的编程面试题。
+   https://github.com/donnemartin/interactive-coding-challenges
+ - Python面试题集：Python面试中经常遇到的问题。
+   https://github.com/sigmavirus24/python-interview-questions
+ - Python面试题集2：额外的300多个Python面试题。
+   https://github.com/learning-zone/python-interview-questions
+
+### 数据结构与算法
+
+ - Python数据结构与算法：Python 3的数据结构与算法，最简单、最整洁的实现，已获1.8万颗星！
+   https://github.com/keon/algorithms
+
+ - Udemy算法、数据结构与面试课程：该库中包含Udemy课程附带的notebook，可帮助你准备面试。
+   https://github.com/jmportilla/Python-for-Algorithms--Data-Structures--and-Interviews
+
+ - Python算法：算法和数据结构的实现，快乐的学习！
+   https://github.com/prakhar1989/Algorithms
+
+### Python资源
+
+ - GitHub的Python趋势列表：GitHub提供的Python流行代码库。
+   https://github.com/trending/python
+ - PEP 8--Python样式指南检查器：该工具可以按照PEP 8样式约定检查你的Python代码。
+   https://github.com/treyhunner/pep8
+ - Google样式指南：Google推荐的Python样式指南。
+   https://github.com/google/styleguide
+ - Python增强建议：Python增强建议，PEP官方索引。
+   https://github.com/python/peps
+
+### 学习Python
+
+ - Python Koans：一个交互式的教程，可通过测试来学习Python，测试驱动开发的入门教程。
+   https://github.com/gregmalcolm/python_koans
+ - 基于项目的学习：面向项目的编程教程列表，包括构建网络抓取工具、应用程序机器人等。
+   https://github.com/tuvtran/project-based-learning#python
+ - 通过JupyterNotebook学习Python 3：通过一系列交互式Jupyter Notebook教你学习Python 3。
+   https://github.com/jerry-git/learn-python3
+
+# 博客
+
+## 中文独立博客列表
+
+不止一次听到有人说：“在中国, 独立博客的时代已经过去了”。确实，很多博主都转到了公众号，知乎专栏，小密圈，微博……
+这些平台读者比较多、他们的推荐算法可以让你的内容被更多人看到。
+
+但我还是更喜欢独立博客，因为有属于自己的域名，因为可以自由地排版，自由地说话。
+
+不得不承认，独立博客在如何获取新读者方面确实存在问题。“酒香也怕巷子深”，同样的内容放在自己的博客和上述的“自媒体平台”上，哪怕有自己的主动宣传，读者的增长速度看起来也远不及自媒体平台上的增粉速度，对吧？
+
+是否可以做一个工具，可以连接这些独立博主，在保持独立博客的自由的同时，组织一个独立博客的创作和读者群体，让独立博客们也有一个稳定的被发现的渠道。这个工具可能是一个带个性化推荐系统的 RSS 客户端，可能是一个类似微博、twitter 但是主要内容是独立博客的新东西，读者可以点赞，评论。可以知道我们 follow 的博主 follow 了谁……
+
+地址：https://github.com/timqian/chinese-independent-blogs
+
 # 阅读3.0
 
 - 自定义书源，自己设置规则，抓取网页数据，规则简单易懂，软件内有规则说明
@@ -52,40 +278,6 @@ tags:
 - 全是漫画App，是替代网页浏览器，专门阅读漫画的工具，无需注册完全免费
 
 地址：https://github.com/hongchacha/cartoon
-
-# 蓝奏网盘 GUI版本
-
-- 本项目使用`PyQt5`实现图形界面，可以完成蓝奏云的大部分功能
-- 得益于 API 的功能，~~可以间接突破单文件最大 100MB 的限制~~(已关闭)，可以上传任意后缀文件，同时增加了批量上传/下载的功能
-
-地址：https://github.com/rachpt/lanzou-gui
-
-# 蓝奏云网盘
-
--  批量上传 / 下载；
--  URL 解析，自动合并文件；
--  任意格式、大文件上传，支持断点功能；
--  快速分享，一件复制分享信息到粘贴板。
-
-地址：https://github.com/chenhb23/lanzouyun-disk
-
-# 阿里云盘小白羊版
-
-- 基于阿里云盘网页版开发的PC客户端，支持win7-11，macOS，linux
-- 多账号登录、常用文件操作（新建文件夹、收藏、重命名、复制、移动、删除、详情、视频雪碧图）
-- 在线播放原始视频、在线播放转码视频、在线预览图片、在线预览文本、在线预览 word/excel/ppt/pdf、连接到远程 Aria2 下载
-- 上传文件、上传文件夹、批量改名、在线解压、回收站、收藏夹、分享文件、导入阿里云分享链接、缩略图列表、网盘内文件搜索、视频文件洗码
-
-- 已发布了使用帮助文档 https://www.yuque.com/liupan1890/xiaobaiyang
-
-地址：https://github.com/liupan1890/aliyunpan
-
-# 解锁网易云音乐客户端变灰歌曲
-
-- 解锁网易云音乐客户端变灰歌曲
-- 支持win、安卓、ios、macOS、Linux
-
-地址：https://github.com/meng-chuan/Unlock-netease-cloud-music
 
 # PagerMaid-Modify
 
@@ -120,29 +312,6 @@ tags:
 - 最后、最后----**可直接下载**
 
 地址：https://github.com/gdtool/zhaopp
-
-# 网盘目录列表
-
--  跨平台、易部署
--  多模式，多账户
--  多主题
--  下载直链
--  防盗链
--  目前支持的网盘
-   -  本地目录
-   -  天翼云网盘
-   -  teambition盘（个人、项目、国际服）
-   -  阿里云盘
-   -  OneDrive国际版
-
-地址：https://github.com/libsgh/PanIndex
-
-# 杜比大喇叭β版
-
-- 杜比大喇叭β是一款网易云音乐的音源代理模块，初衷只是作者对网易云音乐的热爱，希望让更多的人使用网易云。
-- 模块工作原理为音源替换而非破解，所以单曲付费与无版权歌曲有几率匹配错误，真心支持歌手请付费！
-
-地址：https://github.com/nining377/dolby_beta
 
 # 猫抓 chrome媒体嗅探插件
 
@@ -332,27 +501,6 @@ tags:
 
  地址：https://github.com/kiwibrowser/android
 
-# 程序员做饭指南
-
-作者因疫情在家隔离，出不了门。只能宅在家做饭了。作为程序员，作者偶尔在网上找找菜谱和做法。但是这些菜谱往往写法千奇百怪，经常中间莫名出来一些材料。对于习惯了形式语言的程序员来说极其不友好
-
-所以，作者计划自己搜寻菜谱和并结合实际做菜的经验，准备用更清晰精准的描述来整理常见菜的做法，以方便程序员在家做饭。
-
-地址：https://github.com/Anduin2017/HowToCook
-
-# 中文独立博客列表
-
-不止一次听到有人说：“在中国, 独立博客的时代已经过去了”。确实，很多博主都转到了公众号，知乎专栏，小密圈，微博……
-这些平台读者比较多、他们的推荐算法可以让你的内容被更多人看到。
-
-但我还是更喜欢独立博客，因为有属于自己的域名，因为可以自由地排版，自由地说话。
-
-不得不承认，独立博客在如何获取新读者方面确实存在问题。“酒香也怕巷子深”，同样的内容放在自己的博客和上述的“自媒体平台”上，哪怕有自己的主动宣传，读者的增长速度看起来也远不及自媒体平台上的增粉速度，对吧？
-
-是否可以做一个工具，可以连接这些独立博主，在保持独立博客的自由的同时，组织一个独立博客的创作和读者群体，让独立博客们也有一个稳定的被发现的渠道。这个工具可能是一个带个性化推荐系统的 RSS 客户端，可能是一个类似微博、twitter 但是主要内容是独立博客的新东西，读者可以点赞，评论。可以知道我们 follow 的博主 follow 了谁……
-
-地址：https://github.com/timqian/chinese-independent-blogs
-
 # BilibiliVideoDownload
 
 -  下载普通视频
@@ -380,27 +528,3 @@ tags:
 
 地址：https://github.com/jayboxyz/websites-and-tools
 
-# Github星爆沙雕榜
-
-收集GitHub上沙雕好玩儿的项目（当然，不完全是沙雕，还有不少的学习资源）
-
-地址：https://github.com/zhaoolee/StarsAndClown
-
-# 前端学习资料
-
-前端入门到进阶图文教程，超详细的 Web 前端学习笔记，从零开始学前端，做一名精致优雅的前端工程师。持续更新中...
-
-通俗易懂，不懂技术也能学。此前端教程不玩猫腻，不会设置任何套路，因为我**相信启蒙的重要性**。
-
-官网地址：[https://web.qianguyihao.com](https://web.qianguyihao.com/)
-
-如果官网打开异常，请先尝试强制刷新页面，或者清除浏览器缓存，或者提交 GitHub issues 反馈问题。
-
-如果你发现本项目有内容上的错误，欢迎在 GitHub 提交 issues 或者 pull requests 进行指正，方便归档。
-
-- 项目作用
-  - 网上的大部分入门教程，都不太适合初学者，本项目争取照顾到每一位前端入门者的同理心。即使你完全不懂前端，甚至不懂编程，通过这个教程，也能让小白入门。
-  - 帮助前端同学提供一个精品学习资源和路线，提高学习效率，少走很多弯路。
-  - 可以当做前端字典，随时翻阅，查漏补缺。
-
-地址：https://github.com/qianguyihao/Web
