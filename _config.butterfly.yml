@@ -7,8 +7,7 @@
 #   name: link || icon
 
 menu:
-  首页: / || fa fa-home
-  归档: /archives/ || fa fa-archive
+  首页: / fa-archive
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
   #留言板: /messageboard/ || fa fa-paper-plane
@@ -516,7 +515,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: https://cdn.jsdelivr.net/gh/yixicool/upload@main/background%20%20image1_blog.jpg
+#background: https://cdn.jsdelivr.net/gh/yixicool/upload@main/background%20%20image1_blog.jpg
 
 # Footer Background
 footer_bg: false
