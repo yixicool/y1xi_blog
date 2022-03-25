@@ -157,7 +157,9 @@ tags:
 
 地址：https://github.com/Light-City/CPlusPlusThings
 
-## 前端学习资料
+## 前端
+
+### 前端学习资料
 
 前端入门到进阶图文教程，超详细的 Web 前端学习笔记，从零开始学前端，做一名精致优雅的前端工程师。持续更新中...
 
@@ -175,6 +177,24 @@ tags:
   - 可以当做前端字典，随时翻阅，查漏补缺。
 
 地址：https://github.com/qianguyihao/Web
+
+### FrontEndGitHub
+
+**专注于挖掘优秀的前端开源项目，抹平你的前端信息不对称，涵盖 JavaScript、Vue、React、Node、小程序、Flutter、Deno、HTML、CSS 等。**
+
+前端最强的学习导航: [https://www.kwgg2020.com](https://www.kwgg2020.com/)
+
+初级前端与高级前端之间，很大原因就是投入学习前端的时间、经验的差别，其实就是信息差。
+
+如果有一个地方能又快又好的获得这些优质的前端信息，那么将会大大缩短从初级到高级的时间。
+
+基于这个初衷，于是就诞生了这个仓库，能帮助前端开发人员节省时间的仓库！
+
+本项目专注于挖掘 GitHub 上优秀的前端开源项目，并以专题的形式推荐，每专题大概 10 个好项目，每周会有一到三篇精华文章推送。
+
+已经推荐了 面试项目、css奇技淫巧项目、代码规范项目、数据结构与算法项目、管理后台模板、前端必备在线工具 等专题的近 200 个优秀项目了。
+
+地址：https://github.com/FrontEndGitHub/FrontEndGitHub
 
 ## python
 

@@ -1818,37 +1818,482 @@ manager.menu()
 11111111 - 255 （1×2**7 + 1×2**6 + ... + 1×2**1 + 1×2**0)
 ```
 
-用来存放一位0或1，就是计算机里最小的存储单位，叫做【位】，也叫【比特】（bit）。我们规定8个比特构成一个【字节】（byte），这是计算机里最常用的单位。
+用来存放一位二进制数，就是计算机里最小的存储单位，叫做【位】，也叫【比特】（bit）。我们规定8个比特构成一个【字节】（B）（byte），这是计算机里最常用的单位
 
+## 编码表
 
+如果想要互相沟通而不造成混乱，就必须使用相同的编码规则。如果使用了不同的编码规则，那就会彼此读不懂，这就是为何会出现乱码的情况
 
+为了避免乱码，米国首先出台了**ASCII**编码（读音：**/ˈæski/**），统一规定了常用符号用哪些二进制数来表示
 
+- 因为英文字母、数字再加上其他常用符号，也就100来个，因此使用7个比特位（最多表示128位）就够用了，所以一个字节中被剩下的那个比特位就被默认为0
 
+后来中国科学家自力更生，重写了一张编码表，也就是**GB2312**，它用2个字节，也就是16个比特位，来表示绝大部分（65535个）常用汉字。后来，为了能显示更多的中文，又出台了**GBK**标准。
 
+为了沟通的便利，**Unicode**（万国码）应运而生，这套编码表将世界上所有的符号都纳入其中。每个符号都有一个独一无二的编码，现在Unicode可以容纳100多万个符号，所有语言都可以互通，一个网页上也可以显示多国语言。
 
+看起来似乎解决了编码的问题。但是！问题又来了，自从西方世界吃上了Unicode这口大锅饭，为迁就一些占用字节比较多的语言，英文也要跟着占两个字节。比如要存储A，原本**00010001**就可以了，现在偏得用两个字节：**00000000 00010001**才行，这样对计算机空间存储是种极大的浪费！
 
+基于这个痛点，科学家们又提出了新的方法：**UTF-8**（8-bit Unicode Transformation Format）。它是一种针对**Unicode**的可变长度字符编码，它可以使用1~4个字节表示一个符号，根据不同的符号而变化字节长度，而当字符在**ASCII**码的范围时，就用一个字节表示，所以UTF-8还可以兼容ASCII编码。
 
+- **Unicode**与**UTF-8**这种暧昧的关系一言以蔽之：**Unicode**是内存编码的规范，而**UTF-8**是如何保存和传输Unicode的手段。
 
+## encode( )和decode( )
 
+【编码】**encode()**；反之，就是【解码】**decode()**
 
+```
+'编码内容'.encode('期望的编码表')
+'解码内容'.decode('期望的编码表')
+```
 
+```python
+print('以西'.encode('utf-8'))
+print('以西'.encode('gbk'))
+print(b'\xe4\xbb\xa5\xe8\xa5\xbf'.decode('utf-8'))
+print(b'\xd2\xd4\xce\xf7'.decode('gbk'))
 
+>>> b'\xe4\xbb\xa5\xe8\xa5\xbf'
+b'\xd2\xd4\xce\xf7'
+以西
+以西
+```
 
+```
+编码后得到的结果，有一个相同之处，就是最前面都有一个字母b，比如b'\xd2\xd4\xce\xf7'，这代表它是bytes（字节）类型的数据
+\x是分隔符，用来分隔一个字节和另一个字节。
+网址里面有好多的%，它们也是分隔符，替换了Python中的\x
+```
 
+# 文件读写
 
+## 读取文件
 
+### 打开文件
 
+- 使用**open()**函数打开文件
+- `file = open('/Users/Ted/Desktop/test/abc.txt','r',encoding='utf-8') `
+- 不设置mode参数的时候，mode参数默认为'r'；
+- 第一个参数是文件地址
+- 第二个参数表示打开文件时的模式。这里是字符串 **'r'**，表示 read，表示我们以**读**的模式打开了这个文件。
+  - 除了**'r'**,其他还有**'w'**(写入)，**'a'**(追加)等模式
+- 第三个参数**encoding='utf-8'**，表示的是返回的数据采用何种编码，一般采用utf-8或者gbk。注意这里是写**encoding**而不是**encode**
 
+**绝对路径**就是最完整的路径，**相对路径**指的就是【相对于当前文件夹】的路径，也就是编写的这个py文件所放的文件夹路径
 
+Windows系统里，常用 \ 来表示绝对路径， / 来表示相对路径，所以当你把文件拖入终端的时候，路径就变成：
 
+```python
+open('\Users\Ted\Desktop\test\abc.txt')   #绝对路径
+open('abc.txt')    #相对路径
+#相对路径也可以写成open('./abc.txt')
+```
 
+但是 \ 在Python中是转义字符，所以时常会有冲突。为了避坑，Windows的绝对路径通常要稍作处理，写成以下两种格式:
 
+```python
+open('C:\\Users\\Ted\\Desktop\\test\\abc.txt')
+#将'\'替换成'\\'
 
+open(r'C:\Users\Ted\Desktop\test\abc.txt')
+#在路径前加上字母r
+```
 
+### 读取文件
 
+```python
+file = open('/Users/Ted/Desktop/test/abc.txt', 'r',encoding='utf-8') 
+filecontent = file.read()     
+```
 
+### 关闭文件
 
+关闭文件，使用的是**close()**函数
 
+```python
+file = open('/Users/Ted/Desktop/test/abc.txt','r',encoding='utf-8') 
+filecontent = file.read()            
+print(filecontent)
+file.close()   
+```
+
+- 计算机能够打开的文件数量是有限制的，open()过多而不close()的话，就不能再打开文件了。
+- 能保证写入的内容已经在文件里被保存好了。
+- 文件关闭之后就不能再对这个文件进行读写了。如果还需要读写这个文件的话，就要再次 open() 打开这个文件。
+
+## 写入文件
+
+### 打开文件
+
+```python
+file = open('/Users/Ted/Desktop/test/abc.txt','w',encoding='utf-8') 
+```
+
+open() 中还是三个参数，其他都一样，除了要把第二个参数改成**'w'**，表示write，即以写入的模式打开文件。
+
+### 写入文件
+
+往文件中写入内容，使用**write()**函数。
+
+```python
+file = open('/Users/Ted/Desktop/test/abc.txt', 'w',encoding='utf-8') 
+file.write('以西\n')     
+file.write('搞快点\n')  
+```
+
+**'w'**写入模式会给暴力清空掉文件，然后再写入。如果你只想增加东西，而不想完全覆盖掉原文件的话，就要使用**'a'**模式，表示append，即追加
+
+### 关闭文件
+
+还是要记得关闭文件，使用**close()**函数，看代码：
+
+```python
+file = open('/Users/Ted/Desktop/test/abc.txt', 'w',encoding='utf-8') 
+file.write('以西\n')     
+file.write('搞快点\n')  
+file.close()
+```
+
+## open( )函数
+
+|                |                                               |        b(bytes)        |           +            |              b+              |
+| :------------: | :-------------------------------------------: | :--------------------: | :--------------------: | :--------------------------: |
+|  r(read，读)   |      r只读，指针在开头，文件不存在则报错      | rb二进制只读，其余同左 |    r+读写，其余同左    |   rb+二进制读写，其余同左    |
+|  w(write,写)   |      w只写，文件不存在则新建，存在则覆盖      | wb二进制只写，其余同左 |    w+读写，其余同左    |    wb二进制读写，其余同左    |
+| a(append,追加) | a追加，文件存在指针放在末尾，文件不存在则新建 | ab二进制追加，其余同左 | a+追加且可读，其余同左 | ab二进制追加且可读，其余同左 |
+
+such，有**'wb'**的模式，它的意思是以二进制的方式打开一个文件用于写入。因为图片和音频是以二进制的形式保存的，所以使用wb模式就好了
+
+## 使用with关键字的写法
+
+为了避免打开文件后忘记关闭，占用资源或当不能确定关闭文件的恰当时机的时候，可以用到关键字with，之前的例子可以写成这样：
+
+```python
+# 普通写法
+file = open('abc.txt','a') 
+file.write('以西') 
+file.close()
+
+# 使用with关键字的写法
+with open('abc.txt','a') as file:
+#with open('文件地址','读写模式') as 变量名:
+    #格式：冒号不能丢
+    file1.write('以西') 
+    #格式：对文件的操作要缩进
+    #格式：无需用close()关闭
+```
+
+## readlines( )函数
+
+按行读取，readlines()** 会从txt文件取得一个列表，列表中的每个字符串就是**scores.txt**中的每一行。而且每个字符串后面还有换行的**\n**符号。
+
+# 模块
+
+类可以封装方法和属性，而模块就是最高级别的程序组织单元。即模块什么都能封装，包括类、变量、函数等等
+
+- 模块：“.py”后缀的文件即模块
+- 类：使用class语句封装一个类
+- 函数：使用def语句封装一个函数
+- 变量：使用赋值语句赋值一个变量
+
+## import语句
+
+用import语句导入模块后，要使用模块中的变量、函数、类，需要在使用时加上**模块.**的格式。
+
+```python
+# 这是主程序main.py
+
+import secondary  # 导入test模块
+
+print(test.a)  # 使用“模块.变量”调用模块中的变量
+
+test.hi()  # 使用“模块.函数()”调用模块中的函数
+
+A = test.Go2()  # 使用“变量 = 模块.类()”实例化模块中的类
+print(A.a)  # 实例化后，不再需要“模块.”
+A.do2()  # 实例化后，不再需要“模块.”
+```
+
+```python
+# 这是次程序secondary.py
+
+a = '我是模块中的变量a'
+
+def hi():
+    a = '我是函数里的变量a'
+    print('函数“hi”已经运行！')
+
+class Go2:
+    a = '我是类2中的变量a'
+    def do2(self):
+        print('函数“do2”已经运行！')
+```
+
+**import**语句还有一种用法是**import…as…**。比如觉得**import secondary**太长，就可以用**import secondary as s**语句，意思是为“secondary”取个别名为“s”。
+
+另外，当需要同时导入多个模块时，可以用逗号隔开。比如**import a,b,c**可以同时导入“a.py，b.py，c.py”三个文件。
+
+## from … import … 语句
+
+**from … import …**语句可以从模块中导入一个指定的部分到当前模块。
+
+格式︰
+
+`from (模块名) import (指定模块中的变量名/函数名/类名)`
+
+效果:
+
+- 导入模块中的指定部分(变量名/函数名/类名)
+- 导入后的指定的部分可以直接使用，**无需加上“模块.”前缀**
+
+```python
+# 【文件：test.py】
+def hi():
+    print('函数“hi”已经运行！')
+
+# 【文件：main.py】
+from test import hi  # 从模块test中导入函数“hi”
+hi()  # 使用函数“hi”时无需加上“模块.”前缀
+```
+
+当需要从模块中指定所有内容直接使用时，可以写成`from xx模块 import * `的形式，*代表“模块中所有的变量、函数、类”,此时导入后的指定的部分可以直接使用，**无需加上“模块.”前缀**
+
+当然也不要为了图方便直接使用`from xx模块 import *`的形式
+
+这是因为，**模块.xx**的调用形式能通过阅读代码一眼看出是在调用模块中的变量/函数/方法，而去掉**模块.**后代码就不是那么直观了。
+
+## if ______name______ == '______main______'语句
+
+当有一大堆py文件组成一个程序的时候，为了【指明】某个py文件是程序的运行入口，就可以在该py文件中写出这样的代码：
+
+```python
+# 【文件：xx.py】
+
+代码块 ①……
+
+if __name__ == '__main__':
+    代码块 ②……
+```
+
+- 当xx.py文件被直接运行时，代码块②将被运行。
+- 当xx.py文件作为模块是被其他程序导入时，代码块②不被运行。
+
+这里的`【if __name__ == '__main__'】`就相当于是 Python 模拟的程序入口
+
+## 导入第三方模块
+
+Python作为一门胶水语言，一个强大的优势就是它拥有许多第三方的模块可以直接拿来使用
+
+如果是第三方编写的模块，我们需要先从Python的资源管理库下载安装相关的模块文件。
+
+下载安装的方式是打开终端，Windows用户输入**pip install + 模块名**；苹果电脑输入：**pip3 install + 模块名**，点击enter即可。（需要预装python解释器和pip）
+
+可以用命令`模块.__file__`找出了相应模块的文件路径，就可以去打开查看它的代码
+
+## 如何自学模块
+
+学习模块的核心是搞清楚模块的功能，也就是模块中的**函数**和**类方法**有什么作用，以及具体使用案例长什么样
+
+用`random`模块为例，可以从阅读官方文档开始：https://docs.python.org/3.6/library/random.html
+
+或者直接百度搜相关的模块教程，重点关注对象是模块中的**函数**和**类方法**有什么作用，使用的格式是怎样的，然后把使用案例做成笔记
+
+另外可以使用**dir()**函数查看一个模块，看看它里面有什么变量、函数、类、类方法。
+
+## 第三方模块总结
+
+### random模块
+
+```python
+import random  # 调用random模块
+
+a = random.random()  # 随机从0-1之间（包括0不包括1）抽取一个小数
+print(a)
+
+a = random.randint(0,100)  # 随机从0-100（包括0和100）之间抽取一个数字
+print(a)
+
+a = random.choice('abcdefg')  # 随机从字符串，列表等对象中抽取一个元素（可能会重复）
+print(a)
+
+a = random.sample('abcdefg', 3) # 随机从字符串，列表等对象中抽取多个不重复的元素
+print(a)
+
+items = [1, 2, 3, 4, 5, 6]  # “随机洗牌”，比如打乱列表
+random.shuffle(items)
+print(items)
+```
+
+### csv模块
+
+```python
+import csv # 调用csv模块
+
+# 读取csv文件
+with open("test.csv",newline = '')  as f:
+    reader = csv.reader(f)
+    #使用csv的reader()方法，创建一个reader对象
+    for row in reader: 
+    #遍历reader对象的每一行
+        print(row)
+
+# 写入csv文件
+with open('test.csv','a',newline='') as f:
+    writer = csv.writer(f)		# 实例化writer对象
+    writer.writerow([1,2,3,4,5])		#调用方法
+```
+
+### time模块
+
+Python 程序能用很多方式处理日期和时间，转换日期格式是一个常见的功能。
+
+Python 提供了一个 time 和 calendar 模块可以用于格式化日期和时间。
+
+时间间隔是以秒为单位的**浮点数**
+
+每个时间戳都以自从1970年1月1日午夜（历元）经过了多长时间来表示。
+
+函数time.time()用于获取当前时间戳, 如下实例:
+
+```python
+import time  # 引入time模块
+ 
+ticks = time.time()
+print "当前时间戳为:", ticks
+```
+
+时间戳单位最适于做日期运算。但是1970年之前的日期就无法以此表示了。太遥远的日期也不行，UNIX和Windows只支持到2038年。
+
+**python中时间日期格式化符号**
+
+- %y 两位数的年份表示（00-99）
+- %Y 四位数的年份表示（000-9999）
+- %m 月份（01-12）
+- %d 月内中的一天（0-31）
+- %H 24小时制小时数（0-23）
+- %I 12小时制小时数（01-12）
+- %M 分钟数（00=59）
+- %S 秒（00-59）
+- %a 本地简化星期名称
+- %A 本地完整星期名称
+- %b 本地简化的月份名称
+- %B 本地完整的月份名称
+- %c 本地相应的日期表示和时间表示
+- %j 年内的一天（001-366）
+- %p 本地A.M.或P.M.的等价符
+- %U 一年中的星期数（00-53）星期天为星期的开始
+- %w 星期（0-6），星期天为星期的开始
+- %W 一年中的星期数（00-53）星期一为星期的开始
+- %x 本地相应的日期表示
+- %X 本地相应的时间表示
+- %Z 当前时区的名称
+- %% %号本身
+
+```python
+import time
+  
+time_start = time.time() #开始计时
+ 
+#要执行的代码，或函数
+#要执行的代码，或函数
+ 
+time_end = time.time()    #结束计时
+ 
+time_c= time_end - time_start   #运行所花时间
+print('time cost', time_c, 's')
+```
+
+```python
+# 获取当前时间
+import time
+ 
+localtime = time.localtime(time.time())
+print("本地时间为 :", localtime)
+
+>>>	本地时间为 : time.struct_time(tm_year=2016, tm_mon=4, tm_mday=7, tm_hour=10, tm_min=3, tm_sec=27, tm_wday=3, tm_yday=98, tm_isdst=0)
+```
+
+```python
+# 获取格式化的时间
+import time
+ 
+localtime = time.asctime( time.localtime(time.time()) )		# 可以根据需求选取各种格式，但是最简单的获取可读的时间模式的函数是asctime():
+print("本地时间为 :", localtime)
+
+>>> 本地时间为 : Thu Apr  7 10:05:21 2016
+```
+
+```python
+# 格式化日期
+# 使用 time 模块的 strftime 方法来格式化日期
+# time.strftime(format[, t])
+
+import time
+ 
+# 格式化成2016-03-20 11:45:39形式
+print time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) 
+ 
+# 格式化成Sat Mar 28 22:24:24 2016形式
+print time.strftime("%a %b %d %H:%M:%S %Y", time.localtime()) 
+  
+# 将格式字符串转换为时间戳
+a = "Sat Mar 28 22:24:24 2016"
+print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
+```
+
+| 序号 | 函数及描述                                                   |
+| :--- | :----------------------------------------------------------- |
+| 1    | time.altzone 返回格林威治西部的夏令时地区的偏移秒数。如果该地区在格林威治东部会返回负值（如西欧，包括英国）。对夏令时启用地区才能使用。 |
+| 2    | time.asctime([tupletime\]) 接受时间元组并返回一个可读的形式为"Tue Dec 11 18:07:14 2008"（2008年12月11日 周二18时07分14秒）的24个字符的字符串。 |
+| 3    | time.clock( )用以浮点数计算的秒数返回当前的CPU时间。用来衡量不同程序的耗时，比time.time()更有用。 |
+| 4    | [time.ctime([secs\])作用相当于asctime(localtime(secs))，未给参数相当于asctime() |
+| 5    | time.gmtime([secs\])接收时间戳（1970纪元后经过的浮点秒数）并返回格林威治天文时间下的时间元组t。注：t.tm_isdst始终为0 |
+| 6    | time.localtime([secs\])接收时间戳（1970纪元后经过的浮点秒数）并返回当地时间下的时间元组t（t.tm_isdst可取0或1，取决于当地当时是不是夏令时）。 |
+| 7    | time.mktime(tupletime)接受时间元组并返回时间戳（1970纪元后经过的浮点秒数）。 |
+| 8    | time.sleep(secs)推迟调用线程的运行，secs指秒数。             |
+| 9    | time.strftime(fmt[,tupletime\]) 接收以时间元组，并返回以可读字符串表示的当地时间，格式由fmt决定。 |
+| 10   | time.strptime(str,fmt='%a %b %d %H:%M:%S %Y') 根据fmt的格式把一个时间字符串解析为时间元组。 |
+| 11   | time.time( )返回当前时间的时间戳（1970纪元后经过的浮点秒数）。 |
+| 12   | time.tzset()根据环境变量TZ重新初始化时间相关设置。           |
+
+### os模块
+
+os（文件/目录方法）
+
+```python
+import os
+
+os.replace(file1,file2)  #将file1重命名为file2，将其替代。
+os.getcwd()  # 返回当前工作目录
+os.listdir(path)   # 返回path指定的文件夹包含的文件或文件夹的名字的列表
+os.mkdir(path)  # 创建文件夹
+os.path.abspath(path)   # 返回绝对路径
+os.path.basename(path)   # 返回文件名
+os.path.isfile(path)   # 判断路径是否为文件
+os.path.isdir(path)   # 判断路径是否为
+```
+
+# 中场休息（二）：自动收发邮件
+
+- 找到并学习发邮件的模块，给自己发一封一句话的简单邮件。
+- 给自己发一封有完整邮件头、完整正文内容的邮件
+- 群发完整邮件
+
+检索到**smtplib模块**是用来发送邮件用的，**email模块**是用来构建邮件内容的。
+
+- smtplib模块
+
+```python
+import smtplib
+
+server = smtplib.SMTP()		# 类的实例化
+server.connect(host, port)		#连接指定的服务器，host是指定连接的邮箱服务器，port即SMTP服务使用的端口号
+server.login(username, password) 		#username:登录邮箱的用户名；password：授权码
+server.sendmail(from_addr, to_addr, msg.as_string()) 	#from_addr：邮件发送地址，就是上面的username；to_addr：邮件收件人地址；msg.as_string()：为一个字符串类型 ，as_string()是将发送的信息msg变为字符串类型
+server.quit() 		#退出服务器，结束SMTP会话
+```
+
+- email模块
 
 
 
