@@ -1,6 +1,6 @@
 ---
 title: github优秀开源项目收录
-top: false
+top: true
 top_img: https://s2.loli.net/2022/02/15/GK3qOCJSforDHkI.jpg
 cover: false
 toc: true
@@ -25,23 +25,319 @@ tags:
 
 ---
 
-# 网易云
+# 学习资料
 
-## 解锁网易云音乐客户端变灰歌曲
+## 计算机自学指南
+
+新冠肆虐，网课当道，CS爆火，这一系列的事件都让自学计算机成为了一种潮流。
+
+随着欧美众多名校将质量极高的计算机课程全部开源，自学CS成了一件可操作性极强的事情。毫不夸张的说，只要你有毅力和兴趣，自学的成果完全不亚于你在国内任何一所大学受到的本科CS教育（当然，这里单指计算机专业领域，大学带给你的显然不止是专业知识）。
+
+但同时，自学这条路也有很多困难和阻力：课程繁多不知如何选择，资料零散甚至残缺，作业难度不知深浅，课内任务还需要花时间应付······这些主客观因素叠加到一起，使得好课虽多，却只能在收藏夹里吃灰。
+
+在大学的第四个年头，作者想把这一路自学走来的经验和教训，把那些让他受益终身的课程记录下来，分享给大家，形成了这本CS自学指南，以期能给所有想自学计算机的朋友一点帮助。
+
+目标是让一个刚刚接触计算机的小白，可以完全凭借这些开源社区的优质资源，少走弯路，在2-3年内成长为一个有扎实的数学功底和代码能力，经历过数十个千行代码量的Project的洗礼，掌握至少C/C++/Java/JS/Python/Go/Rust等主流语言，对算法、电路、体系、网络、操统、编译、人工智能、机器学习、计算机视觉、自然语言处理、强化学习、密码学、信息论、博弈论、数值分析、统计学、分布式、数据库、图形学、Web开发、云服务、超算等等方面均有所涉猎的全能程序员。此后，无论是选择科研还是就业，我相信你都会有相当的竞争力。
+
+地址：https://github.com/PKUFlyingPig/cs-self-learning
+
+## C/C++语言技术点思维导图
+
+2021年【思维导图】盒子，C/C++，Golang，Linux，云原生，数据库，DPDK，音视频开发，TCP/IP，数据结构，计算机原理等等
+
+![思维导图](https://user-images.githubusercontent.com/87457873/143252350-0c0078b1-c474-4ab1-ab0e-edfdc1a0bbda.jpg)
+
+地址：https://github.com/0voice/learning_mind_map
+
+## C++ 那些事儿
+
+这是一个适合初学者从**入门到进阶**的仓库，解决了**面试者与学习者**想要**深入 C++**及如何**入坑 C++**的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
+
+地址：https://github.com/Light-City/CPlusPlusThings
+
+## 清华大学计算机系课程攻略
+
+本项目至今为止收录了以下内容：
+
+- 课程攻略：readme.md
+- 电子版课件和参考教材：ebook/[教学年份]/[老师姓名].pdf （由于可能存在的版权问题，暂未加入）
+- 平时作业答案与大作业资料：hw/[学生年级_学生姓名]/
+- 历年试卷和复习资料：exam/
+- 开卷考试 A4 纸：a4paper/
+
+等等。目前具体已涵盖课程如下：（课程分类按照实际情况而不是按照培养方案）
+
+地址：https://github.com/PKUanonym/REKCARC-TSC-UHT
+
+## 前端
+
+### 前端学习资料
+
+前端入门到进阶图文教程，超详细的 Web 前端学习笔记，从零开始学前端，做一名精致优雅的前端工程师。持续更新中...
+
+通俗易懂，不懂技术也能学。此前端教程不玩猫腻，不会设置任何套路，因为我**相信启蒙的重要性**。
+
+官网地址：[https://web.qianguyihao.com](https://web.qianguyihao.com/)
+
+如果官网打开异常，请先尝试强制刷新页面，或者清除浏览器缓存，或者提交 GitHub issues 反馈问题。
+
+如果你发现本项目有内容上的错误，欢迎在 GitHub 提交 issues 或者 pull requests 进行指正，方便归档。
+
+- 项目作用
+  - 网上的大部分入门教程，都不太适合初学者，本项目争取照顾到每一位前端入门者的同理心。即使你完全不懂前端，甚至不懂编程，通过这个教程，也能让小白入门。
+  - 帮助前端同学提供一个精品学习资源和路线，提高学习效率，少走很多弯路。
+  - 可以当做前端字典，随时翻阅，查漏补缺。
+
+地址：https://github.com/qianguyihao/Web
+
+### FrontEndGitHub
+
+**专注于挖掘优秀的前端开源项目，抹平你的前端信息不对称，涵盖 JavaScript、Vue、React、Node、小程序、Flutter、Deno、HTML、CSS 等。**
+
+前端最强的学习导航: [https://www.kwgg2020.com](https://www.kwgg2020.com/)
+
+初级前端与高级前端之间，很大原因就是投入学习前端的时间、经验的差别，其实就是信息差。
+
+如果有一个地方能又快又好的获得这些优质的前端信息，那么将会大大缩短从初级到高级的时间。
+
+基于这个初衷，于是就诞生了这个仓库，能帮助前端开发人员节省时间的仓库！
+
+本项目专注于挖掘 GitHub 上优秀的前端开源项目，并以专题的形式推荐，每专题大概 10 个好项目，每周会有一到三篇精华文章推送。
+
+已经推荐了 面试项目、css奇技淫巧项目、代码规范项目、数据结构与算法项目、管理后台模板、前端必备在线工具 等专题的近 200 个优秀项目了。
+
+地址：https://github.com/FrontEndGitHub/FrontEndGitHub
+
+## python
+
+一键自动安装Python解释器+pip包管理器+VSCode编辑器三个软件以及request模块和BeautifulSoup模块:https://static.pandateacher.com/python%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E5%8C%85-windows%E7%89%88.zip
+
+### Python 代码库
+
+#### Python开发资源大全
+
+Python框架、库、软件以及资源精选列表。
+
+地址：https://github.com/vinta/awesome-python
+
+#### 精选列表的中文版
+
+地址：https://github.com/jobbole/awesome-python-cn
+
+#### Python资源精选列表2
+
+精心筛选的一组Python框架、库、软件以及资源列表
+
+地址：https://github.com/trananhkma/fucking-awesome-python
+
+#### Python精选应用程序
+
+将近400个开源Python应用程序，按主题陈列，且附有使用apatite根据结构化数据生成的代码库、文档等链接
+
+地址：https://github.com/mahmoud/awesome-python-applications
+
+#### Pytorch
+
+与Pytorch相关的库，Pytorch是有名的张量与动态神经网络机器学习框架
+
+地址：https://github.com/bharathgs/Awesome-pytorch-list
+
+#### Python异步
+
+精心挑选的Python异步框架、库、软件以及资源清单:
+
+地址：https://github.com/timofurrer/awesome-asyncio
+
+#### Jupyter
+
+非常了不起的Jupyter项目、库以及资源的清单。可以利用Jupyter创建和共享包含实时代码、方程式、可视化效果、文本等的Python文档。
+地址：https://github.com/markusschanta/awesome-jupyter
+
+### 图书文档
+
+#### Python指南
+
+关于Python日常安装、配置和使用的最佳实践手册，包括pip、numpy、virtualenv等的介绍。
+
+地址：https://github.com/realpython/python-guide
+
+#### Python 中文指南
+
+适合零基础的小白入门的 python 基础教程，代码示例丰富，好上手。
+
+地址：https://github.com/iswbm/python-guide
+
+#### Python简明教程
+
+面向初学者的Python教程，你只需要知道如何保存一个保存文本文件即可开始学习。
+
+地址：https://github.com/swaroopch/byte-of-python
+
+#### Cosmic Python
+
+以python方式的应用程序架构模式来管理复杂性，O'Reilly的免费书籍！
+
+地址：https://github.com/cosmicpython/book
+
+#### PyCharm 中文指南
+
+面向 python 开发者的一份 PyCharm 指南，内含大量的 Gif 动态图讲解 100 多个能提高开发效率的小技巧：
+
+地址：https://github.com/iswbm/pycharm-guide
+
+#### Python 黑魔法手册
+
+专门介绍 Python 黑魔法玩法的文档。
+
+地址：https://github.com/iswbm/magic-python
+
+#### Python机器学习
+
+该库包含经典的机器学习教程的Notebook代码。
+
+地址：https://github.com/rasbt/python-machine-learning-book-3rd-edition
+
+#### Python书单
+
+ 有关Python的最佳书单！
+
+地址：https://github.com/Junnplus/awesome-python-books）
+
+### 面试问题
+
+#### Python经典编程面试题
+
+经典的Python编程面试问题集，请不要作弊！
+
+地址：https://github.com/StBogdan/CTCI_python
+
+#### Python交互式编程题
+
+使用Anki学习卡片提供了120多个持续更新、交互式、测试驱动的编程面试题。
+
+地址：https://github.com/donnemartin/interactive-coding-challenges
+
+#### Python面试题集
+
+Python面试中经常遇到的问题。
+
+地址：https://github.com/sigmavirus24/python-interview-questions
+
+#### Python面试题集2
+
+额外的300多个Python面试题。
+
+地址：https://github.com/learning-zone/python-interview-questions
+
+### 数据结构与算法
+
+#### Python数据结构与算法
+
+Python 3的数据结构与算法，最简单、最整洁的实现，已获1.8万颗星！
+
+地址：https://github.com/keon/algorithms
+
+#### Udemy算法、数据结构与面试课程
+
+该库中包含Udemy课程附带的notebook，可帮助你准备面试。
+
+地址：https://github.com/jmportilla/Python-for-Algorithms--Data-Structures--and-Interviews
+
+#### Python算法
+
+算法和数据结构的实现，快乐的学习！
+
+地址：https://github.com/prakhar1989/Algorithms
+
+### Python资源
+
+#### examples-of-web-crawlers
+
+一些非常有趣的python爬虫例子,对新手比较友好
+
+一些常见的网站爬虫例子，代码通用性较高，时效性较久。**项目代码对新手比较友好**，尽量用简单的python代码，并配有大量注释。
+
+地址：https://github.com/shengqiangzhang/examples-of-web-crawlers
+
+#### GitHub的Python趋势列表
+
+GitHub提供的Python流行代码库。
+
+地址：https://github.com/trending/python
+
+#### PEP 8--Python样式指南检查器
+
+该工具可以按照PEP 8样式约定检查你的Python代码。
+
+地址：https://github.com/treyhunner/pep8
+
+#### Google样式指南
+
+Google推荐的Python样式指南。
+
+地址：https://github.com/google/styleguide
+
+#### Python增强建议
+
+Python增强建议，PEP官方索引。
+
+地址：https://github.com/python/peps
+
+#### PythonPark
+
+这里是学习 Python 的乐园，**保姆级教程**：AI实验室、宝藏视频、数据结构、学习指南、机器学习实战、深度学习实战、Python基础、网络爬虫、大厂面经、程序人生、资源分享。
+
+地址：https://github.com/Jack-Cherish/PythonPark
+
+### 学习Python
+
+#### Python Koans
+
+一个交互式的教程，可通过测试来学习Python，测试驱动开发的入门教程。
+
+地址：https://github.com/gregmalcolm/python_koans
+
+#### 基于项目的学习
+
+面向项目的编程教程列表，包括构建网络抓取工具、应用程序机器人等。
+
+地址：https://github.com/tuvtran/project-based-learning#python
+
+#### 通过JupyterNotebook学习Python 3
+
+通过一系列交互式Jupyter Notebook教你学习Python 3。
+
+地址：https://github.com/jerry-git/learn-python3
+
+# 音乐
+
+## 洛雪音乐
+
+- 一个基于 Electron + Vue 开发的音乐软件
+- Windows音乐软件，聚合5大主流音乐平台
+- 支持音乐搜索、导入歌单、收藏歌单、查看各大音乐排行榜、支持歌词翻译等等，开源，十分安全，与Android端不同的是，Windows端还支持下载
+
+地址：https://github.com/lyswhut/lx-music-desktop
+
+
+
+## 网易云
+
+### 解锁网易云音乐客户端变灰歌曲
 
 - 解锁网易云音乐客户端变灰歌曲
 - 支持win、安卓、ios、macOS、Linux
 
 地址：https://github.com/meng-chuan/Unlock-netease-cloud-music
 
-## 杜比大喇叭β版
+### 杜比大喇叭β版
 
 - 杜比大喇叭β是一款网易云音乐的音源代理模块，初衷只是作者对网易云音乐的热爱，希望让更多的人使用网易云。
 - 模块工作原理为音源替换而非破解，所以单曲付费与无版权歌曲有几率匹配错误，真心支持歌手请付费！
 
 地址：https://github.com/nining377/dolby_beta
 
-## 网易云音乐自动任务
+### 网易云音乐自动任务
 
 功能：
 
@@ -135,147 +431,6 @@ tags:
 
 地址：https://github.com/libsgh/PanIndex
 
-# 学习资料
-
-## 计算机自学指南
-
-新冠肆虐，网课当道，CS爆火，这一系列的事件都让自学计算机成为了一种潮流。
-
-随着欧美众多名校将质量极高的计算机课程全部开源，自学CS成了一件可操作性极强的事情。毫不夸张的说，只要你有毅力和兴趣，自学的成果完全不亚于你在国内任何一所大学受到的本科CS教育（当然，这里单指计算机专业领域，大学带给你的显然不止是专业知识）。
-
-但同时，自学这条路也有很多困难和阻力：课程繁多不知如何选择，资料零散甚至残缺，作业难度不知深浅，课内任务还需要花时间应付······这些主客观因素叠加到一起，使得好课虽多，却只能在收藏夹里吃灰。
-
-在大学的第四个年头，作者想把这一路自学走来的经验和教训，把那些让他受益终身的课程记录下来，分享给大家，形成了这本CS自学指南，以期能给所有想自学计算机的朋友一点帮助。
-
-目标是让一个刚刚接触计算机的小白，可以完全凭借这些开源社区的优质资源，少走弯路，在2-3年内成长为一个有扎实的数学功底和代码能力，经历过数十个千行代码量的Project的洗礼，掌握至少C/C++/Java/JS/Python/Go/Rust等主流语言，对算法、电路、体系、网络、操统、编译、人工智能、机器学习、计算机视觉、自然语言处理、强化学习、密码学、信息论、博弈论、数值分析、统计学、分布式、数据库、图形学、Web开发、云服务、超算等等方面均有所涉猎的全能程序员。此后，无论是选择科研还是就业，我相信你都会有相当的竞争力。
-
-地址：https://github.com/PKUFlyingPig/cs-self-learning
-
-## C++ 那些事儿
-
-这是一个适合初学者从**入门到进阶**的仓库，解决了**面试者与学习者**想要**深入 C++**及如何**入坑 C++**的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
-
-地址：https://github.com/Light-City/CPlusPlusThings
-
-## 前端
-
-### 前端学习资料
-
-前端入门到进阶图文教程，超详细的 Web 前端学习笔记，从零开始学前端，做一名精致优雅的前端工程师。持续更新中...
-
-通俗易懂，不懂技术也能学。此前端教程不玩猫腻，不会设置任何套路，因为我**相信启蒙的重要性**。
-
-官网地址：[https://web.qianguyihao.com](https://web.qianguyihao.com/)
-
-如果官网打开异常，请先尝试强制刷新页面，或者清除浏览器缓存，或者提交 GitHub issues 反馈问题。
-
-如果你发现本项目有内容上的错误，欢迎在 GitHub 提交 issues 或者 pull requests 进行指正，方便归档。
-
-- 项目作用
-  - 网上的大部分入门教程，都不太适合初学者，本项目争取照顾到每一位前端入门者的同理心。即使你完全不懂前端，甚至不懂编程，通过这个教程，也能让小白入门。
-  - 帮助前端同学提供一个精品学习资源和路线，提高学习效率，少走很多弯路。
-  - 可以当做前端字典，随时翻阅，查漏补缺。
-
-地址：https://github.com/qianguyihao/Web
-
-### FrontEndGitHub
-
-**专注于挖掘优秀的前端开源项目，抹平你的前端信息不对称，涵盖 JavaScript、Vue、React、Node、小程序、Flutter、Deno、HTML、CSS 等。**
-
-前端最强的学习导航: [https://www.kwgg2020.com](https://www.kwgg2020.com/)
-
-初级前端与高级前端之间，很大原因就是投入学习前端的时间、经验的差别，其实就是信息差。
-
-如果有一个地方能又快又好的获得这些优质的前端信息，那么将会大大缩短从初级到高级的时间。
-
-基于这个初衷，于是就诞生了这个仓库，能帮助前端开发人员节省时间的仓库！
-
-本项目专注于挖掘 GitHub 上优秀的前端开源项目，并以专题的形式推荐，每专题大概 10 个好项目，每周会有一到三篇精华文章推送。
-
-已经推荐了 面试项目、css奇技淫巧项目、代码规范项目、数据结构与算法项目、管理后台模板、前端必备在线工具 等专题的近 200 个优秀项目了。
-
-地址：https://github.com/FrontEndGitHub/FrontEndGitHub
-
-## python
-
-### Python 代码库
-
- - Python开发资源大全：Python框架、库、软件以及资源精选列表。
-   https://github.com/vinta/awesome-python
- - 精选列表的中文版
-   https://github.com/jobbole/awesome-python-cn
- - Python资源精选列表2：精心筛选的一组Python框架、库、软件以及资源列表 
-   https://github.com/trananhkma/fucking-awesome-python
- - Python精选应用程序：将近400个开源Python应用程序，按主题陈列，且附有使用apatite根据结构化数据生成的代码库、文档等链接
-   https://github.com/mahmoud/awesome-python-applications
- - Pytorch：与Pytorch相关的库，Pytorch是有名的张量与动态神经网络机器学习框架 
-   https://github.com/bharathgs/Awesome-pytorch-list
- - Python异步：精心挑选的Python异步框架、库、软件以及资源清单: 
-   https://github.com/timofurrer/awesome-asyncio
- - Jupyter：非常了不起的Jupyter项目、库以及资源的清单。你可以利用Jupyter创建和共享包含实时代码、方程式、可视化效果、文本等的Python文档。
-   https://github.com/markusschanta/awesome-jupyter
- - Python书单: 有关Python的最佳书单！
-   https://github.com/Junnplus/awesome-python-books）
-
-### 图书文档
-
- - Python指南：关于Python日常安装、配置和使用的最佳实践手册，包括pip、numpy、virtualenv等的介绍。
-   https://github.com/realpython/python-guide
- - Python 中文指南：适合零基础的小白入门的 python 基础教程，代码示例丰富，好上手。
-   https://github.com/iswbm/python-guide
- - Python简明教程：面向初学者的Python教程，你只需要知道如何保存一个保存文本文件即可开始学习。
-   https://github.com/swaroopch/byte-of-python
- - Cosmic Python：以python方式的应用程序架构模式来管理复杂性，O'Reilly的免费书籍！
-   https://github.com/cosmicpython/book
- - PyCharm 中文指南：面向 python 开发者的一份 PyCharm 指南，内含大量的 Gif 动态图讲解 100 多个能提高开发效率的小技巧：
-   https://github.com/iswbm/pycharm-guide
- - Python 黑魔法手册：专门介绍 Python 黑魔法玩法的文档。
-   https://github.com/iswbm/magic-python
- - Python机器学习：该库包含经典的机器学习教程的Notebook代码。
-   https://github.com/rasbt/python-machine-learning-book-3rd-edition
-
-### 面试问题
-
- - Python经典编程面试题：经典的Python编程面试问题集，请不要作弊！
-   https://github.com/StBogdan/CTCI_python
- - Python交互式编程题：使用Anki学习卡片提供了120多个持续更新、交互式、测试驱动的编程面试题。
-   https://github.com/donnemartin/interactive-coding-challenges
- - Python面试题集：Python面试中经常遇到的问题。
-   https://github.com/sigmavirus24/python-interview-questions
- - Python面试题集2：额外的300多个Python面试题。
-   https://github.com/learning-zone/python-interview-questions
-
-### 数据结构与算法
-
- - Python数据结构与算法：Python 3的数据结构与算法，最简单、最整洁的实现，已获1.8万颗星！
-   https://github.com/keon/algorithms
-
- - Udemy算法、数据结构与面试课程：该库中包含Udemy课程附带的notebook，可帮助你准备面试。
-   https://github.com/jmportilla/Python-for-Algorithms--Data-Structures--and-Interviews
-
- - Python算法：算法和数据结构的实现，快乐的学习！
-   https://github.com/prakhar1989/Algorithms
-
-### Python资源
-
- - GitHub的Python趋势列表：GitHub提供的Python流行代码库。
-   https://github.com/trending/python
- - PEP 8--Python样式指南检查器：该工具可以按照PEP 8样式约定检查你的Python代码。
-   https://github.com/treyhunner/pep8
- - Google样式指南：Google推荐的Python样式指南。
-   https://github.com/google/styleguide
- - Python增强建议：Python增强建议，PEP官方索引。
-   https://github.com/python/peps
-
-### 学习Python
-
- - Python Koans：一个交互式的教程，可通过测试来学习Python，测试驱动开发的入门教程。
-   https://github.com/gregmalcolm/python_koans
- - 基于项目的学习：面向项目的编程教程列表，包括构建网络抓取工具、应用程序机器人等。
-   https://github.com/tuvtran/project-based-learning#python
- - 通过JupyterNotebook学习Python 3：通过一系列交互式Jupyter Notebook教你学习Python 3。
-   https://github.com/jerry-git/learn-python3
-
 # 博客
 
 ## 中文独立博客列表
@@ -291,6 +446,12 @@ tags:
 
 地址：https://github.com/timqian/chinese-independent-blogs
 
+# NekogramX
+
+- 开源的第三方Telegram客户端，有许多实用的功能，还支持多类型的代理
+
+地址：https://github.com/NekogramX-Backup/NekoX
+
 # 阅读3.0
 
 - 自定义书源，自己设置规则，抓取网页数据，规则简单易懂，软件内有规则说明
@@ -304,6 +465,25 @@ tags:
 - 软件开源，持续优化，无广告
 
 地址：https://github.com/gedoor/legado
+
+# Bilibili-Evolved
+
+- 签到助手
+- 下载音频
+- 删除广告
+- BV 号转换
+- 启用弹幕空降
+- 下载弹幕
+- 展开弹幕列表
+- 下载视频
+- 双击全屏
+- 启用视频截图
+- 启用逐帧调整
+- 播放前显示封面
+- 跳过充电鸣谢
+- 下载字幕
+
+地址：https://github.com/the1812/Bilibili-Evolved
 
 # TrafficMonitor桌面悬浮窗软件
 
@@ -386,21 +566,7 @@ tags:
 
 地址：https://github.com/zhaoolee/garss
 
-# hitomi 下载器
 
-- 🍰简单明了的用户界面
-- 🚀下载加速
-- 💻在单个任务中支持 24 个线程
-- 🚥支持限速
-- 📜支持用户脚本
-- 🧲支持BitTorrent和Magnet
-- 🎞️支持M3U8和MPD格式的视频
-- 🌙深色模式
-- 🧳便携式
-- 📋剪贴板监视器
-- 🗃️易于组织任务
-
-地址：https://github.com/KurtBestor/Hitomi-Downloader
 
 # 赫蹏-中文排版神器
 
@@ -520,18 +686,6 @@ tags:
 
 地址：https://github.com/Molunerfinn/PicGo
 
-# 洛雪音乐
-
-- 一个基于 Electron + Vue 开发的音乐软件
-- Windows音乐软件，聚合5大主流音乐平台
-- 支持音乐搜索、导入歌单、收藏歌单、查看各大音乐排行榜、支持歌词翻译等等，开源，十分安全，与Android端不同的是，Windows端还支持下载
-
-地址：https://github.com/lyswhut/lx-music-desktop
-
-# NekogramX
-
-- 开源的第三方Telegram客户端，有许多实用的功能，还支持多类型的代理
-
 地址：https://github.com/NekoX-Dev/NekoX
 
 # KiwiBrowser
@@ -568,3 +722,63 @@ tags:
 
 地址：https://github.com/jayboxyz/websites-and-tools
 
+# 工具
+
+## SpiderFlow - 智能在线爬虫
+
+新一代爬虫平台，以图形化方式定义爬虫流程，不写代码即可完成爬虫
+
+平台以流程图的方式定义爬虫,是一个高度灵活可配置的爬虫平台
+
+特性
+
+-  支持Xpath/JsonPath/css选择器/正则提取/混搭提取
+-  支持JSON/XML/二进制格式
+-  支持多数据源、SQL select/selectInt/selectOne/insert/update/delete
+-  支持爬取JS动态渲染(或ajax)的页面
+-  支持代理
+-  支持自动保存至数据库/文件
+-  常用字符串、日期、文件、加解密等函数
+-  支持插件扩展(自定义执行器，自定义方法）
+-  任务监控,任务日志
+-  支持HTTP接口
+-  支持Cookie自动管理
+-  支持自定义函数
+
+插件
+
+-  [Selenium插件](https://gitee.com/ssssssss-team/spider-flow-selenium)
+-  [Redis插件](https://gitee.com/ssssssss-team/spider-flow-redis)
+-  [OSS插件](https://gitee.com/ssssssss-team/spider-flow-oss)
+-  [Mongodb插件](https://gitee.com/ssssssss-team/spider-flow-mongodb)
+-  [IP代理池插件](https://gitee.com/ssssssss-team/spider-flow-proxypool)
+-  [OCR识别插件](https://gitee.com/ssssssss-team/spider-flow-ocr)
+-  [电子邮箱插件](https://gitee.com/ssssssss-team/spider-flow-mailbox)
+
+地址：https://github.com/ssssssss-team/spider-flow
+
+## hitomi 下载器
+
+- 🍰简单明了的用户界面
+- 🚀下载加速
+- 💻在单个任务中支持 24 个线程
+- 🚥支持限速
+- 📜支持用户脚本
+- 🧲支持BitTorrent和Magnet
+- 🎞️支持M3U8和MPD格式的视频
+- 🌙深色模式
+- 🧳便携式
+- 📋剪贴板监视器
+- 🗃️易于组织任务
+
+地址：https://github.com/KurtBestor/Hitomi-Downloader
+
+# Qwerty Learner
+
+为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
+
+内置了常用的 CET-4 、CET-6 、GMAT 、GRE 、IELTS 、SAT 、TOEFL 、考研英语、专业四级英语、专业八级英语，也有程序员常见英语单词以及多种编程语言 API 等词库。 尽可能满足大部分用户对单词记忆的需求，也非常欢迎社区贡献更多的词库。
+
+方便用户在记忆单词时，同时记忆读音与音标。
+
+地址：https://github.com/Kaiyiwing/qwerty-learner
