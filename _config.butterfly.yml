@@ -516,7 +516,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-#background: https://cdn.jsdelivr.net/gh/yixicool/upload@main/background%20%20image1_blog.jpg
+# background: https://cdn.jsdelivr.net/gh/yixicool/upload@main/background%20%20image1_blog.jpg
 
 # Footer Background
 footer_bg: false
@@ -533,12 +533,12 @@ enter_transitions: true
 # canvas_ribbon (靜止彩帶背景)
 # See: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   size: 150
-  alpha: 0.6
+  alpha: 0.7
   zIndex: -1
   click_to_change: false
-  mobile: false
+  mobile: true
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
@@ -864,7 +864,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/mycss.css"> #引入自建的页面滚动条
     - <link rel="stylesheet" href="/css/footercss.css"> #页脚渐变色滚动动画
-    - <link rel="stylesheet" href="/css/txtcss.css"> #文章页背景
+    # - <link rel="stylesheet" href="/css/txtcss.css"> #文章页背景
     - <link rel="stylesheet" href="/css/background.css"> #主页背景
   bottom:
     # - <script src="xxxx"></script>
