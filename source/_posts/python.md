@@ -1,5 +1,5 @@
 ---
-title: python基础语法学习归档
+  title: python基础语法学习归档
 top: false
 top_img: https://s2.loli.net/2022/02/24/TJX1jfQ7M59np8V.png
 cover: false
@@ -145,6 +145,20 @@ print(type({0:'zero'}))
 ```
 
 用来判断数据类型
+
+### strip( )函数
+
+使用字符串的`strip()`方法，把多余的内容裁剪掉（`字符串.strip()`）
+
+````python
+string = '     python      '
+
+# 去掉字符串string前后两端的空格
+str = string.strip()
+print(str)
+
+>>>python
+````
 
 ### 运算符
 

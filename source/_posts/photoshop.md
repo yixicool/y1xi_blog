@@ -20,6 +20,7 @@ tags:
  - 软件
  - pc
  - 学习指南
+ - photoshop
 ---
 
 

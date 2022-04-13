@@ -773,6 +773,12 @@ Python增强建议，PEP官方索引。
 
 地址：https://github.com/KurtBestor/Hitomi-Downloader
 
+## Bookmark Cleaner
+
+自动检测失效书签链接，一键清理 🚀
+
+地址：https://github.com/justorez/bookmark-cleaner
+
 # Qwerty Learner
 
 为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
@@ -782,3 +788,21 @@ Python增强建议，PEP官方索引。
 方便用户在记忆单词时，同时记忆读音与音标。
 
 地址：https://github.com/Kaiyiwing/qwerty-learner
+
+# 微信 Markdown 编辑器
+
+Markdown 文档自动即时渲染为微信图文，让你不再为微信文章排版而发愁！只要你会基本的 Markdown 语法，就能做出一篇样式简洁而又美观大方的微信图文
+
+支持：
+
+-  支持自定义 CSS 样式
+-  支持 Markdown 所有基础语法
+-  支持浅色、暗黑两种主题模式
+-  支持 Ctrl + F 快速格式化文档
+-  支持色盘取色，快速替换文章整体色调
+-  支持多图上传，可自定义配置图床
+-  支持自定义上传逻辑
+-  支持在编辑框右键弹出功能选项卡
+-  支持批量转换本地图片为线上图片
+
+地址：https://github.com/doocs/md

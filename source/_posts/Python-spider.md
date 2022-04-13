@@ -1,5 +1,5 @@
 ---
-title: python爬虫学习归档
+ title: python爬虫学习归档
 top: false
 top_img: https://s2.loli.net/2022/03/27/ioCAsUJNb6HBQnj.jpg
 cover: false
@@ -17,6 +17,7 @@ categories:
 tags: 
  - python
  - 学习指南
+ - webspider
 ---
 爬虫，从本质上来说，就是利用程序在网上拿到对自身有价值的数据
 
@@ -270,7 +271,7 @@ HTML和python一样，**【有缩进】**，这缩进将文档之间的**结构�
 |     <a>     |  定义超链接  |       <ol>       |   定义有序列表   |
 |   <audio>   |   定义音频   |       <ul>       |   定义无序列表   |
 |  <button>   |   定义按钮   |       <li>       | 定义单个列表条目 |
-|    <div>    |  定义块区域  |      <br />      |       分行       |
+|    <div>    |  定义块区域  |       <br>       |       分行       |
 | <!--    --> |     注释     |                  |                  |
 
 ## 属性
@@ -442,6 +443,47 @@ HTML的层级关系可通过其中的小三角形进行查阅，每一个可以�
 
 当然，这样的修改只是在**本地的修改**，而服务器上的源文件是修改不了的，可以使用这个方法来调试HTML代码。
 
+## Network
+
+`Network`的功能是：记录在当前页面上发生的所有请求。`Network`记录的是实时网络请求
+
+刷新网络界面后，浏览器会重新访问网络，这样就会有记录。
+
+在最下面会显示：此处共有xx个请求，xxMB项资源，耗时 xx s完成。
+
+这个，正是浏览器每时每刻工作的真相：它总是在向服务器，发起各式各样的请求。当这些请求完成，它们会一起组成`Elements`中的网页源代码
+
+一般来说，都是这种第0个请求先启动了，其他的请求才会关联启动，一点点地将网页给填充起来。做一个比喻，第0个请求就好比是人的骨架，确定了这个网页的结构。在此之后，众多的请求接连涌入
+
+有一些网页，直接把所有的关键信息都放在第0个请求里，尤其是一些比较老（或比较轻量）的网站，直接用`requests`和`BeautifulSoup`就能解决它们。
+
+![image-20220409195827159.png](https://s2.loli.net/2022/04/09/l1G96uHAiQRyxYe.png)
+
+第0行的左侧，红色的圆钮是启用`Network`监控（默认高亮打开），灰色圆圈是清空面板上的信息。右侧勾选框`Preserve log`，它的作用是“保留请求日志”。如果不点击这个，当发生页面跳转的时候，记录就会被清空。所以，在爬取一些会发生跳转的网页时，会点亮它
+
+第1行，是对请求进行分类查看
+
+- ALL - 查看全部
+- XHR - 一种不借助刷新网页即可传输数据的对象
+- Doc - Document，第0个请求一般在这里
+- lmg - 仅查看图片
+- Media - 仅查看媒体文件
+- Other - 其他
+- JS和CSS - 前端代码,负责发起请求和页面实现
+- Font - 字体
+
+### XHR
+
+在`Network`中，有一类非常重要的请求叫做`XHR`（把鼠标在XHR上悬停，可以看到它的完整表述是XHR and Fetch）
+
+使用浏览器上网的时候，经常有这样的情况：浏览器上方，它所访问的网址没变，但是网页里却新加了内容。
+
+典型代表：购物网站，下滑自动加载出更多商品。在线翻译网站，输入中文实时变英文。
+
+这种技术叫做Ajax技术。应用这种技术，好处是显而易见的——更新网页内容，而不用重新加载整个网页。又省流量又省时间的，何乐而不为，富加载文本数据
+
+这种技术在工作的时候，会创建一个`XHR`（或是Fetch）对象，然后利用`XHR`对象来实现，服务器和浏览器之间传输数据。在这里，`XHR`和`Fetch`并没有本质区别，只是`Fetch`出现得比`XHR`更晚一些，所以对一些开发人员来说会更好用，但作用都是一样的。
+
 # 解析数据
 
 ## BeautifulSoup模块
@@ -478,19 +520,98 @@ bs对象 = BeautifulSoup(要解析的文本,'解析器')
 |   find( )   | 提取满足要求的首个数据 |   BeautifulSoup对象.find(标签,属性)   |   soup.find('div',class_='book')   |
 | find_all( ) | 提取满足要求的所有数据 | BeautifulSoup对象.find_all(标签,属性) | soup.find_all('div',class_='book') |
 
+- 示例中括号里的`class_`有一个下划线，是为了和python语法中的类 `class`区分，避免程序冲突。当然，除了用`class`属性去匹配，还可以使用其它属性，比如`style`属性等
+- find( )其次，括号中的参数：标签和属性可以任选其一，也可以两个一起使用，这取决于在网页中提取的内容
+- `bs_bookstore.find('ul',class_='nav').find('ul').find_all('li')`提取多个层级 
 
+```python
+import requests
+from bs4 import BeautifulSoup
+url = 'https://localprod.pandateacher.com/python-manuscript/crawler-html/spder-men0.0.html'
+res = requests.get (url)
+print(res.status_code)
+soup = BeautifulSoup(res.text,'html.parser')
+# 使用find()方法提取首个<div>元素，并放到变量item里。
+item = soup.find('div') 
+# 打印item的数据类型
+print(type(item))
+# 打印item  
+print(item)    
+
+>>>200
+<class 'bs4.element.Tag'>
+# 这是一个Tag类标签对象
+<div>大家好，我是一个块</div>
+# 运行结果是首个div元素
+```
+
+### find_all( )
+
+```python
+import requests
+from bs4 import BeautifulSoup
+url = 'https://localprod.pandateacher.com/python-manuscript/crawler-html/spder-men0.0.html'
+res = requests.get (url)
+print(res.status_code)
+soup = BeautifulSoup(res.text,'html.parser')
+# 用find_all()把所有符合要求的数据提取出来，并放在变量items里
+items = soup.find_all('div') 
+# 打印items的数据类型
+print(type(items))
+# 打印items
+print(items)
+
+>>>200
+<class 'bs4.element.ResultSet'>
+# 得到的是一个ResultSet类的对象。其实是Tag对象以列表结构储存了起来，可以把它当做列表来处理。
+[<div>大家好，我是一个块</div>, <div>我也是一个块</div>, <div>我还是一个块</div>]
+# 运行结果是全部的div元素，它们一起组成了一个列表结构
+```
 
 ## 	Tag对象
 
+`Tag`类对象的常用属性和方法
 
+|         属性/方法          |              作用               |
+| :------------------------: | :-----------------------------: |
+| Tag.find()和Tag.find_all() |         提取Tag中的Tag          |
+|          Tag.text          |         提取Tag中的文字         |
+|       Tag['属性名']        | 输入参数后提取Tag中这个属性的值 |
 
+```python
+# 调用requests库
+import requests 
+# 调用BeautifulSoup库
+from bs4 import BeautifulSoup 
+# 返回一个response对象，赋值给res
+res =requests.get('https://localprod.pandateacher.com/python-manuscript/crawler-html/spider-men5.0.html')
+# 把res解析为字符串
+html=res.text
+# 把网页解析为BeautifulSoup对象
+soup = BeautifulSoup( html,'html.parser')
+# 通过匹配属性class='books'提取出我们想要的元素
+items = soup.find_all(class_='books')  
+# 遍历列表items
+for item in items:       
+    # 在列表中的每个元素里，匹配标签<h2>提取出数据               
+    kind = item.find('h2')     
+    #  在列表中的每个元素里，匹配属性class_='title'提取出数据          
+    title = item.find(class_='title')  
+    # 在列表中的每个元素里，匹配属性class_='info'提取出数据   
+    brief = item.find(class_='info')      
+    # 打印书籍的类型、名字、链接和简介的文字
+    print(kind.text,'\n',title.text,'\n',title['href'],'\n',brief.text) 
+```
 
+用`text`获取Tag类数据的纯文本时，获取的是该标签内的所有纯文本信息，不论是直接在这个标签内，还是在它的子标签内。
 
+需要强调的一点是，`text`可以这样做，但如果是要提取属性的值，是不可以的。父标签只能提取它自身的属性值，不能提取子标签的属性值，不然就是会报错
 
+## 对象的变化过程
 
+操作对象从`URL`链接用`requests.get(url)`到了`Response`对象,又通过`response.text`转化为字符串格式，再通过`BeautiflSoup(字符串，'html.parser')`转换成BS对象
 
-
-
+我操作对象是这样的：`Response对象`——`字符串`——`BS对象`。到这里，又产生了两条分岔：一条是`BS对象`——`Tag对象`；另一条是`BS对象`——`列表`——`Tag对象`
 
 
 
