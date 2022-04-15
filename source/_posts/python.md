@@ -1,5 +1,5 @@
 ---
-  title: python基础语法学习归档
+title: python基础语法学习归档
 top: false
 top_img: https://s2.loli.net/2022/02/24/TJX1jfQ7M59np8V.png
 cover: false
