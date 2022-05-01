@@ -11,14 +11,14 @@ menu:
   归档: /archives/ || fa fa-archive
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
+  碎碎念: /broken-thoughts/ || fas fa-blog
   #留言板: /messageboard/ || fa fa-paper-plane
-  生活|| fas fa-cat:
-    碎碎念: /broken-thoughts/ || fas fa-blog
-    音乐: /music/ || fas fa-music
-    电影: /movie/ || fas fa-film
-    书籍: /book/ || fas fa-book
+  #生活|| fas fa-cat:
+    #音乐: /music/ || fas fa-music
+    #电影: /movie/ || fas fa-film
+    #书籍: /book/ || fas fa-book
   友链: /link/ || fa fa-link
-  Myself: /myself/ || fa fa-id-card
+  Myself: /myself/ || fas fa-cat
 
 
 # Hide the child menu items in mobile sidebar

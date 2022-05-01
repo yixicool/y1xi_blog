@@ -779,17 +779,7 @@ Python增强建议，PEP官方索引。
 
 地址：https://github.com/justorez/bookmark-cleaner
 
-# Qwerty Learner
-
-为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
-
-内置了常用的 CET-4 、CET-6 、GMAT 、GRE 、IELTS 、SAT 、TOEFL 、考研英语、专业四级英语、专业八级英语，也有程序员常见英语单词以及多种编程语言 API 等词库。 尽可能满足大部分用户对单词记忆的需求，也非常欢迎社区贡献更多的词库。
-
-方便用户在记忆单词时，同时记忆读音与音标。
-
-地址：https://github.com/Kaiyiwing/qwerty-learner
-
-# 微信 Markdown 编辑器
+## 微信 Markdown 编辑器
 
 Markdown 文档自动即时渲染为微信图文，让你不再为微信文章排版而发愁！只要你会基本的 Markdown 语法，就能做出一篇样式简洁而又美观大方的微信图文
 
@@ -806,3 +796,29 @@ Markdown 文档自动即时渲染为微信图文，让你不再为微信文章�
 -  支持批量转换本地图片为线上图片
 
 地址：https://github.com/doocs/md
+
+# Qwerty Learner
+
+为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
+
+内置了常用的 CET-4 、CET-6 、GMAT 、GRE 、IELTS 、SAT 、TOEFL 、考研英语、专业四级英语、专业八级英语，也有程序员常见英语单词以及多种编程语言 API 等词库。 尽可能满足大部分用户对单词记忆的需求，也非常欢迎社区贡献更多的词库。
+
+方便用户在记忆单词时，同时记忆读音与音标。
+
+地址：https://github.com/Kaiyiwing/qwerty-learner
+
+# 经济学人、纽约客、自然、卫报等英语外刊杂志下载
+
+英文外刊杂志 Github 项目，可下载、可订阅 kindle 推送，支持 epub、mobi、pdf 格式，每周更新。英语进阶学习必备。
+
+地址：https://github.com/hehonghui/the-economist-ebooks/
+
+# awesome-selfhosted
+
+该仓库收集了 1000+ 可本地搭建的网络服务和 Web 应用程序
+
+自托管是在您自己的服务器上托管和管理应用程序的做法，而不是从[SaaSS](https://www.gnu.org/philosophy/who-does-that-server-really-serve.html)提供商处使用。
+
+这是可以托管在您自己的服务器上的[自由](https://en.wikipedia.org/wiki/Free_software)软件[网络服务](https://en.wikipedia.org/wiki/Network_service)和[Web 应用程序的列表。](https://en.wikipedia.org/wiki/Web_application)非自由软件列在[非自由](https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/non-free.md)页面上。
+
+地址：https://github.com/awesome-selfhosted/awesome-selfhosted
