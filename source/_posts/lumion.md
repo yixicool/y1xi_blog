@@ -1,7 +1,7 @@
 ---
 title: lumion
 top: false
-top_img: https://s2.loli.net/2022/02/25/RnzTbmsHKp97k2X.jpg
+top_img: https://pic.imgdb.cn/item/627234910947543129ee19b7.jpg
 cover: false
 toc: true
 mathjax: false

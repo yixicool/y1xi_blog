@@ -1,7 +1,7 @@
 ---
 title: photoshop
 top: false
-top_img: https://s2.loli.net/2022/02/24/ijSMXFRn8smNBpZ.jpg
+top_img: https://pic.imgdb.cn/item/627232f30947543129e9b4e4.jpg
 cover: false
 toc: true
 mathjax: false

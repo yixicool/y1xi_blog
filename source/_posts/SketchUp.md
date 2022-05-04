@@ -1,7 +1,7 @@
 ---
 title: SketchUp
 top: false
-top_img: https://s2.loli.net/2022/02/24/UQpxtRS5NZIv6wG.jpg
+top_img: https://pic.imgdb.cn/item/627231a20947543129e72889.jpg
 cover: false
 toc: true
 mathjax: false

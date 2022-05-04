@@ -1,7 +1,7 @@
 ---
 title: github优秀开源项目收录
 top: true
-top_img: https://s2.loli.net/2022/02/15/GK3qOCJSforDHkI.jpg
+top_img: https://pic.imgdb.cn/item/627232a60947543129e91c5c.jpg
 cover: false
 toc: true
 mathjax: false

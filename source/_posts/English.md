@@ -1,7 +1,7 @@
 ---
 title: 英语自救指南
 top: false
-top_img: https://s2.loli.net/2022/02/25/qgBoaVFmQpi4MAu.jpg
+top_img: https://pic.imgdb.cn/item/627233870947543129eb4a02.jpg
 cover: false
 toc: true
 mathjax: false

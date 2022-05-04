@@ -1,7 +1,7 @@
 ---
 title: 管住嘴，迈开腿
 top: false
-top_img: https://s2.loli.net/2022/03/06/7Txgo3pvykYFZiH.jpg
+top_img: https://pic.imgdb.cn/item/627235cf0947543129f162b7.jpg
 cover: false
 toc: true
 mathjax: false

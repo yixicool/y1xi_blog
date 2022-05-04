@@ -169,5 +169,5 @@ live2d:
 #图片懒加载
 lazyload:
   enable: true
-  loadingImg: /img/loading.gif
+  loadingImg: https://pic.imgdb.cn/item/62723a150947543129fc0398.gif
 

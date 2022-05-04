@@ -1,7 +1,7 @@
 ---
 title: CAD
 top: false
-top_img: https://s2.loli.net/2022/02/25/Hwd2c6XhrgECfnN.jpg
+top_img: https://pic.imgdb.cn/item/627233c60947543129ec0f16.jpg
 cover: false  
 toc: true
 mathjax: false

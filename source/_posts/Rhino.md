@@ -1,7 +1,7 @@
 ---
 title: Rhino
 top: false
-top_img: https://s2.loli.net/2022/02/24/fGny6kroPaMOtTi.jpg
+top_img: https://pic.imgdb.cn/item/627233740947543129eb179c.jpg
 cover: false
 toc: true
 mathjax: false

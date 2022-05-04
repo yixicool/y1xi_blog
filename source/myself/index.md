@@ -1,7 +1,7 @@
 ---
 title: myself     
 date: 2021-12-24 01:01:24
-top_img: https://s2.loli.net/2022/02/24/GFw4aDRjMd2puYk.jpg
+top_img: https://pic.imgdb.cn/item/627235f10947543129f1aff1.jpg
 ---
 
 # 以西的小窝

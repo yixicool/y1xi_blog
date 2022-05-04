@@ -1,7 +1,7 @@
 ---
 title: 多端翻越长城工具合集
 top: false
-top_img: https://s2.loli.net/2022/02/24/VCbtoTQwJveMsD6.png
+top_img: https://pic.imgdb.cn/item/627233e60947543129ec6bc4.png
 cover: false
 toc: true
 toc_number: false

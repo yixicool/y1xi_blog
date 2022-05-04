@@ -1,7 +1,7 @@
 ---
 title: 知识就是希望|电子书环游记
 top: false
-top_img: https://s2.loli.net/2022/02/24/HyjY7Fr5sNDxVEd.png
+top_img: https://pic.imgdb.cn/item/627234910947543129ee199b.png
 cover: false
 toc: true
 mathjax: false

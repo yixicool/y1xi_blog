@@ -1,7 +1,7 @@
 ---
 title: 漫画&动漫网站网站全收录
 top: false
-top_img: https://s2.loli.net/2022/02/16/p4Y7vxUidIVEe3f.jpg
+top_img: https://pic.imgdb.cn/item/627235660947543129f066a4.jpg
 cover: false
 toc: true
 mathjax: false

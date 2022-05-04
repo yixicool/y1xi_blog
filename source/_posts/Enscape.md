@@ -1,7 +1,7 @@
 ---
 title: Enscape
 top: false
-top_img: https://s2.loli.net/2022/03/05/HG31O9FdyPTiS8v.jpg
+top_img: https://pic.imgdb.cn/item/627230c70947543129e5534f.jpg
 cover: false
 toc: true
 mathjax: false

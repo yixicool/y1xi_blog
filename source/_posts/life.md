@@ -1,7 +1,7 @@
 ---
 title: 数字时代的反思
 top: false
-top_img: https://s2.loli.net/2022/03/06/ncG96alRED5m2NP.jpg
+top_img: https://pic.imgdb.cn/item/627234eb0947543129ef169f.jpg
 cover: false
 toc: true
 mathjax: false

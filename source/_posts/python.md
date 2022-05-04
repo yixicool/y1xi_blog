@@ -1,7 +1,7 @@
 ---
 title: python基础语法学习归档
 top: false
-top_img: https://s2.loli.net/2022/02/24/TJX1jfQ7M59np8V.png
+top_img: https://pic.imgdb.cn/item/6272332c0947543129ea4564.jpg
 cover: false
 toc: true
 mathjax: false

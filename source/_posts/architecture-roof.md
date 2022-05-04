@@ -1,7 +1,7 @@
 ---
 title: 中国古建筑之屋顶大赏
 top: false
-top_img: https://s2.loli.net/2022/02/24/hCN4DZO8KdoUcta.jpg
+top_img: https://pic.imgdb.cn/item/627234cf0947543129eec8e2.jpg
 cover: false
 toc: true
 mathjax: false

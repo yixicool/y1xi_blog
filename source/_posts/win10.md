@@ -1,7 +1,7 @@
 ---
 title: win10の驯服养成记
 top: false
-top_img: https://s2.loli.net/2022/02/16/LKJhNk9VDH6M4Yz.png
+top_img: https://pic.imgdb.cn/item/627233520947543129eaacca.png
 cover: false
 toc: true
 mathjax: false

@@ -1,7 +1,7 @@
 ---
 title: python爬虫学习归档
 top: false
-top_img: https://s2.loli.net/2022/03/27/ioCAsUJNb6HBQnj.jpg
+top_img: https://pic.imgdb.cn/item/627231530947543129e687bb.jpg
 cover: false
 toc: true
 mathjax: false
@@ -443,7 +443,7 @@ HTML的层级关系可通过其中的小三角形进行查阅，每一个可以�
 
 当然，这样的修改只是在**本地的修改**，而服务器上的源文件是修改不了的，可以使用这个方法来调试HTML代码。
 
-## Network
+### Network
 
 `Network`的功能是：记录在当前页面上发生的所有请求。`Network`记录的是实时网络请求
 
@@ -457,7 +457,7 @@ HTML的层级关系可通过其中的小三角形进行查阅，每一个可以�
 
 有一些网页，直接把所有的关键信息都放在第0个请求里，尤其是一些比较老（或比较轻量）的网站，直接用`requests`和`BeautifulSoup`就能解决它们。
 
-![image-20220409195827159.png](https://s2.loli.net/2022/04/09/l1G96uHAiQRyxYe.png)
+![1](https://pic.imgdb.cn/item/626e6714239250f7c595fac1.jpg)
 
 第0行的左侧，红色的圆钮是启用`Network`监控（默认高亮打开），灰色圆圈是清空面板上的信息。右侧勾选框`Preserve log`，它的作用是“保留请求日志”。如果不点击这个，当发生页面跳转的时候，记录就会被清空。所以，在爬取一些会发生跳转的网页时，会点亮它
 
@@ -483,6 +483,50 @@ HTML的层级关系可通过其中的小三角形进行查阅，每一个可以�
 这种技术叫做Ajax技术。应用这种技术，好处是显而易见的——更新网页内容，而不用重新加载整个网页。又省流量又省时间的，何乐而不为，富加载文本数据
 
 这种技术在工作的时候，会创建一个`XHR`（或是Fetch）对象，然后利用`XHR`对象来实现，服务器和浏览器之间传输数据。在这里，`XHR`和`Fetch`并没有本质区别，只是`Fetch`出现得比`XHR`更晚一些，所以对一些开发人员来说会更好用，但作用都是一样的。
+
+## json
+
+`json`是一种数据交换的格式
+
+```python
+# 定义一个字典  
+a = {'name':'以西'}
+# 定义一张列表
+b = [1,2,3,4]
+# 定义一个json
+c = {
+        "people": 
+        [
+            { "name":"A" , "gender":"male"}, 
+            { "name":"B" , "gender":"female"}, 
+            { "name":"C" , "gender":"male"},
+        ]
+    }
+```
+
+这种特殊的写法决定了，`json`能够有组织地存储信息。
+
+`json`是另一种组织数据的格式，长得和Python中的列表/字典非常相像。它和`html`一样，常用来做网络数据传输。刚刚在`XHR`里查看到的列表/字典，严格来说其实它不是列表/字典，是`json`。如此，`json`数据才能实现，跨平台，跨语言工作。
+
+`json`和`XHR`之间的关系：`XHR`用于传输数据，它能传输很多种数据，`json`是被传输的一种数据格式
+
+### json数据解析
+
+requests.get( )请求得到了`json`数据，可以在`requests`库的官方文档中查看解析方法
+
+Requests 中也有一个内置的 JSON 解码器，来处理 JSON 数据：
+
+```python
+import requests
+
+r = requests.get('https://api.github.com/events')
+r.json()
+>>> [{u'repository': {u'open_issues': 0, u'url': 'https://github.com/...
+```
+
+如果 JSON 解码失败， `r.json()` 就会抛出一个异常。例如，响应内容是 401 (Unauthorized)，尝试访问 `r.json()` 将会抛出 `ValueError: No JSON object could be decoded` 异常。
+
+需要注意的是，成功调用 `r.json()` 并**不**意味着响应的成功。有的服务器会在失败的响应中包含一个 JSON 对象（比如 HTTP 500 的错误细节）。这种 JSON 会被解码返回。要检查请求是否成功，请使用 `r.raise_for_status()` 或者检查 `r.status_code` 是否和你的期望相同。
 
 # 解析数据
 
@@ -613,9 +657,31 @@ for item in items:
 
 我操作对象是这样的：`Response对象`——`字符串`——`BS对象`。到这里，又产生了两条分岔：一条是`BS对象`——`Tag对象`；另一条是`BS对象`——`列表`——`Tag对象`
 
+# 带参数请求数据
 
+一个url的完整格式
 
+在豆瓣搜索“海边的卡夫卡”，它的网址会是这样：
 
+https://www.douban.com/search?q=%E6%B5%B7%E8%BE%B9%E7%9A%84%E5%8D%A1%E5%A4%AB%E5%8D%A1
+
+在知乎搜索“宇宙大爆炸”，它的网址会是这样：
+
+https://www.zhihu.com/search?type=content&q=%E5%AE%87%E5%AE%99%E5%A4%A7%E7%88%86%E7%82%B8
+
+上面每个`url`都由两部分组成。前半部分大多形如：https://xx.xx.xxx/xxx/xxx
+
+后半部分，多形如：xx=xx&xx=xxx&xxxxx=xx&……
+
+两部分使用`?`来连接
+
+这前半部分是需要请求的地址，它告诉服务器，我想访问这里。而后半部分，就是请求所附带的参数，它会告诉服务器想要**什么样**的数据。
+
+这参数的结构，会和字典很像，有键有值，键值用`=`连接；每组键值之间，使用`&`来连接。
+
+例如豆瓣。请求的地址是https://www.douban.com/search
+
+而`q=%E6%B5%B7%E8%BE%B9%E7%9A%84%E5%8D%A1%E5%A4%AB%E5%8D%A1`则是请求所附带的参数
 
 
 

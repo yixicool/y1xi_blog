@@ -6,7 +6,7 @@ tags: 吐槽
 categories: 闲言碎语
 keywords:
 description:
-top_img: https://s2.loli.net/2022/02/24/AH4zy8SPUqgiDXK.png
+top_img: https://pic.imgdb.cn/item/627234910947543129ee19d0.png
 comments: false
 cover: false
 toc: 

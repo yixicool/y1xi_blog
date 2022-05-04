@@ -1,7 +1,7 @@
 ---
 title: Grasshopper
 top: false
-top_img: https://s2.loli.net/2022/04/07/NnPaoOIsXxg21QA.jpg
+top_img: https://pic.imgdb.cn/item/6272332c0947543129ea4564.jpg
 cover: false
 toc: true
 mathjax: false
