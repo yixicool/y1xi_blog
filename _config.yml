@@ -168,6 +168,6 @@ live2d:
 
 #图片懒加载
 lazyload:
-  enable: true
+  enable: false
   loadingImg: https://pic.imgdb.cn/item/62723a150947543129fc0398.gif
 

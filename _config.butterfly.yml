@@ -142,8 +142,8 @@ cover:
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: https://pic.imgdb.cn/item/62723a150947543129fc0398.gif
-  post_page: https://pic.imgdb.cn/item/62723a150947543129fc0398.gif
+  flink: #https://pic.imgdb.cn/item/62723a150947543129fc0398.gif
+  post_page: #https://pic.imgdb.cn/item/62723a150947543129fc0398.gif
 
 # A simple 404 page
 error_404:
