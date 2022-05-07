@@ -189,7 +189,7 @@ toc:
   post: true
   page: true
   number: false
-  expand: false
+  expand: true
   style_simple: false # for post
 
 post_copyright:
@@ -219,7 +219,7 @@ post_edit:
 
 # Related Articles
 related_post:
-  enable: true
+  enable: false
   limit: 2 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
@@ -580,7 +580,6 @@ click_heart:
 ClickShowText:
   enable: true
   text:
-    - 23424353245
     - 民主
     - 文明
     - 和谐
