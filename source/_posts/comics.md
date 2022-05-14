@@ -2,7 +2,7 @@
 title: 漫画&动漫网站网站全收录
 top: false
 top_img: https://pic.imgdb.cn/item/627235660947543129f066a4.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627235660947543129f066a4.jpg
 toc: true
 mathjax: false
 date: 2022-02-16 09:44:07

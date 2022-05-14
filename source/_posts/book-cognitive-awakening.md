@@ -2,7 +2,7 @@
 title: 《认知觉醒》的认知觉醒
 top: false
 top_img: https://pic.imgdb.cn/item/626e3e67239250f7c5331f07.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/626e3e67239250f7c5331f07.jpg
 toc: true
 mathjax: false
 date: 2022-05-01 15:52:39

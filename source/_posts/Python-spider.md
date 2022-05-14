@@ -2,7 +2,7 @@
 title: python爬虫学习归档
 top: false
 top_img: https://pic.imgdb.cn/item/627231530947543129e687bb.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627231530947543129e687bb.jpg
 toc: true
 mathjax: false
 date: 2022-03-27 17:27:44

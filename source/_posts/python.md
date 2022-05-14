@@ -1,8 +1,8 @@
 ---
 title: python基础语法学习归档
 top: false
-top_img: https://pic.imgdb.cn/item/6272332c0947543129ea4564.jpg
-cover: false
+top_img: https://pic.imgdb.cn/item/6272333d0947543129ea75a0.png
+cover: https://pic.imgdb.cn/item/6272333d0947543129ea75a0.png
 toc: true
 mathjax: false
 date: 2022-03-09 17:34:50

@@ -2,7 +2,7 @@
 title: Rhino
 top: false
 top_img: https://pic.imgdb.cn/item/627233740947543129eb179c.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627233740947543129eb179c.jpg
 toc: true
 mathjax: false
 date: 2022-03-08 17:40:28

@@ -2,7 +2,7 @@
 title: 数字时代的反思
 top: false
 top_img: https://pic.imgdb.cn/item/627234eb0947543129ef169f.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627234eb0947543129ef169f.jpg
 toc: true
 mathjax: false
 date: 2022-03-06 19:14:12

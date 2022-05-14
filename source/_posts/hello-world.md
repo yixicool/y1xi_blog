@@ -8,7 +8,7 @@ keywords:
 description:
 top_img: https://pic.imgdb.cn/item/627234910947543129ee19d0.png
 comments: false
-cover: false
+cover: https://pic.imgdb.cn/item/627234910947543129ee19d0.png
 toc: 
 toc_number: false
 toc_style_simple:

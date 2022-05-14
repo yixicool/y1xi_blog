@@ -2,7 +2,7 @@
 title: SketchUp
 top: false
 top_img: https://pic.imgdb.cn/item/627231a20947543129e72889.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627231a20947543129e72889.jpg
 toc: true
 mathjax: false
 date: 2022-02-24 17:39:20

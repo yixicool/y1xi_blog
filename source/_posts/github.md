@@ -2,7 +2,7 @@
 title: github优秀开源项目收录
 top: true
 top_img: https://pic.imgdb.cn/item/627232a60947543129e91c5c.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627232a60947543129e91c5c.jpg
 toc: true
 mathjax: false
 date: 2022-02-15 17:26:51
@@ -68,6 +68,14 @@ tags:
 等等。目前具体已涵盖课程如下：（课程分类按照实际情况而不是按照培养方案）
 
 地址：https://github.com/PKUanonym/REKCARC-TSC-UHT
+
+## 程序员应该访问的最佳网站中文版
+
+一些对程序员有用的网站
+
+在学习CS的时候有一些你必须知道的有用的站点来获取通知为了你的技术储备和学习新知识。这里是一个你应该访问的不是非常全面的一些站点的列表，这个列表会不断更新，只要我能得到链接，你也可以通过添加你知道的来为此做出贡献
+
+地址：https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh
 
 ## 前端
 
@@ -796,6 +804,18 @@ Markdown 文档自动即时渲染为微信图文，让你不再为微信文章�
 -  支持批量转换本地图片为线上图片
 
 地址：https://github.com/doocs/md
+
+## 微信/QQ/TIM防撤回补丁
+
+适用于 Windows 下 PC 版微信/QQ/TIM的防撤回补丁。**支持最新版微信/QQ/TIM**，其中微信能够选择安装多开功能。
+
+地址：https://github.com/huiyadanli/RevokeMsgPatcher
+
+## TyProAction
+
+typora离线代码注册码注册机
+
+地址：https://github.com/taozhiyu/TyProAction
 
 # Qwerty Learner
 

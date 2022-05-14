@@ -2,7 +2,7 @@
 title: CAD
 top: false
 top_img: https://pic.imgdb.cn/item/627233c60947543129ec0f16.jpg
-cover: false  
+cover: https://pic.imgdb.cn/item/627233c60947543129ec0f16.jpg
 toc: true
 mathjax: false
 date: 2022-02-21 14:12:10

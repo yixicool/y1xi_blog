@@ -2,7 +2,7 @@
 title: win10の驯服养成记
 top: false
 top_img: https://pic.imgdb.cn/item/627233520947543129eaacca.png
-cover: false
+cover: https://pic.imgdb.cn/item/627233520947543129eaacca.png
 toc: true
 mathjax: false
 date: 2022-02-15 11:26:54
@@ -24,7 +24,7 @@ tags:
 
 所以为了更高效的~~**摸鱼**~~使用win10，我们就需要一些特殊手段对win10进行驯化
 
-手段包含但不限于系统的优化，软件的选择，外观的美化等等
+###### 手段包含但不限于系统的优化，软件的选择，外观的美化等等
 
 ps：文中所推荐的软件及应用均不包含下载链接，所用图片侵删
 
@@ -346,3 +346,4 @@ XnConvert 能够帮助你批量对图片进行操作，包括但不限于：旋�
 
 # **未完待续，内容正在生产中。。。**
 
+#### 

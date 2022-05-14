@@ -2,7 +2,7 @@
 title: lumion
 top: false
 top_img: https://pic.imgdb.cn/item/627234910947543129ee19b7.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627234910947543129ee19b7.jpg
 toc: true
 mathjax: false
 date: 2022-02-25 00:48:38

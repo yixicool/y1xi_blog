@@ -2,7 +2,7 @@
 title: 管住嘴，迈开腿
 top: false
 top_img: https://pic.imgdb.cn/item/627235cf0947543129f162b7.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627235cf0947543129f162b7.jpg
 toc: true
 mathjax: false
 date: 2022-03-01 19:59:39

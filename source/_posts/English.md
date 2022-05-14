@@ -2,7 +2,7 @@
 title: 英语自救指南
 top: false
 top_img: https://pic.imgdb.cn/item/627233870947543129eb4a02.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627233870947543129eb4a02.jpg
 toc: true
 mathjax: false
 date: 2022-02-24 22:05:10

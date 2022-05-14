@@ -2,7 +2,7 @@
 title: Grasshopper
 top: false
 top_img: https://pic.imgdb.cn/item/6272332c0947543129ea4564.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/6272332c0947543129ea4564.jpg
 toc: true
 mathjax: false
 date: 2022-04-07 14:08:19

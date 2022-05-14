@@ -2,7 +2,7 @@
 title: Enscape
 top: false
 top_img: https://pic.imgdb.cn/item/627230c70947543129e5534f.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627230c70947543129e5534f.jpg
 toc: true
 mathjax: false
 date: 2022-03-05 15:06:38

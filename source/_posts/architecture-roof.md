@@ -2,7 +2,7 @@
 title: 中国古建筑之屋顶大赏
 top: false
 top_img: https://pic.imgdb.cn/item/627234cf0947543129eec8e2.jpg
-cover: false
+cover: https://pic.imgdb.cn/item/627234cf0947543129eec8e2.jpg
 toc: true
 mathjax: false
 date: 2022-02-09 13:54:58
@@ -768,19 +768,9 @@ tags:
 
 ![31.gif (640×458) (jsdelivr.net)](https://cdn.jsdelivr.net/gh/yixicool/upload@main/roof/31.gif)
 
-  
-
-
-
-
-
-  
-
 # 四 屋顶组合
 
-  
-
-## 方胜亭  
+## 方胜亭
 
 
 方胜一词指双菱形
