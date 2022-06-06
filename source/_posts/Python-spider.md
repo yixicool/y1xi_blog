@@ -521,6 +521,7 @@ import requests
 
 r = requests.get('https://api.github.com/events')
 r.json()
+
 >>> [{u'repository': {u'open_issues': 0, u'url': 'https://github.com/...
 ```
 
