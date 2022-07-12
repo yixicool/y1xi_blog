@@ -12,7 +12,7 @@ coverImg:
 password:
 summary:
 categories:
- - 娱乐
+ - 吃喝玩乐
  - 书
 tags:
  - 读书

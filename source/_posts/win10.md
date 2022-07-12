@@ -1,5 +1,5 @@
 ---
-title: win10の驯服养成记
+title: win10の驯服养成企划
 top: false
 top_img: https://pic.imgdb.cn/item/627233520947543129eaacca.png
 cover: https://pic.imgdb.cn/item/627233520947543129eaacca.png

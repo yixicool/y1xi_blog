@@ -107,7 +107,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/yixicool/yixicool.github.io
+  repo: git@github.com:yixicool/yixicool.github.io.git
   branch: main
 
 #Rss配置

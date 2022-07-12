@@ -362,6 +362,14 @@ Python增强建议，PEP官方索引。
 
 地址：https://github.com/chen310/NeteaseCloudMusicTasks
 
+### 网易云音乐升级全家桶
+
+通过调用官方接口，每天自动刷完300首歌，借此可以达到快速升级的目的。
+
+一个账号平均耗时为1分钟左右。放在服务器运行即可不需要人工干预，支持无服务器的云函数部署，每天自动听歌做任务，向你的微信发送任务通知。
+
+地址：https://github.com/ZainCheung/netease-cloud
+
 # 沙雕
 
 ## Github星爆沙雕榜
@@ -492,6 +500,12 @@ Python增强建议，PEP官方索引。
 - 下载字幕
 
 地址：https://github.com/the1812/Bilibili-Evolved
+
+# BILIBILI-HELPER
+
+这是一个利用 Linux 定时任务、Java Jar、云函数、Docker、青龙面板等方式完成哔哩哔哩（Bilibili）每日投币、赛事预测、点赞、分享视频、直播签到、银瓜子兑换硬币、漫画每日签到等任务，简单配置即可每日轻松获取 65 经验值(api)
+
+地址：https://github.com/Oreomeow/bili
 
 # TrafficMonitor桌面悬浮窗软件
 
@@ -842,3 +856,4 @@ typora离线代码注册码注册机
 这是可以托管在您自己的服务器上的[自由](https://en.wikipedia.org/wiki/Free_software)软件[网络服务](https://en.wikipedia.org/wiki/Network_service)和[Web 应用程序的列表。](https://en.wikipedia.org/wiki/Web_application)非自由软件列在[非自由](https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/non-free.md)页面上。
 
 地址：https://github.com/awesome-selfhosted/awesome-selfhosted
+
